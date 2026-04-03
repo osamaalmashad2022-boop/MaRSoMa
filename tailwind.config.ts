@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -14,8 +15,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        cairo: ["Cairo", "system-ui", "sans-serif"],
-        inter: ["Inter", "system-ui", "sans-serif"],
+        tajawal: ["Tajawal", "system-ui", "sans-serif"],
+        space: ["Space Grotesk", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "SF Mono", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -64,6 +66,10 @@ export default {
           DEFAULT: "hsl(var(--info))",
           foreground: "hsl(var(--info-foreground))",
         },
+        cyan: "hsl(var(--cyan))",
+        purple: "hsl(var(--purple))",
+        electric: "hsl(var(--electric))",
+        emerald: "hsl(var(--emerald))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -91,15 +97,15 @@ export default {
           to: { height: "0", opacity: "0" },
         },
         "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(12px)" },
+          "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "fade-out": {
           "0%": { opacity: "1", transform: "translateY(0)" },
-          "100%": { opacity: "0", transform: "translateY(12px)" },
+          "100%": { opacity: "0", transform: "translateY(16px)" },
         },
         "scale-in": {
-          "0%": { transform: "scale(0.95)", opacity: "0" },
+          "0%": { transform: "scale(0.92)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
         },
         "slide-in-right": {
@@ -107,12 +113,13 @@ export default {
           "100%": { transform: "translateX(0)" },
         },
         "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "33%": { transform: "translateY(-8px) rotate(1deg)" },
+          "66%": { transform: "translateY(4px) rotate(-1deg)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(217 91% 60% / 0.2)" },
-          "50%": { boxShadow: "0 0 30px -5px hsl(217 91% 60% / 0.4)" },
+          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(262 83% 58% / 0.2)" },
+          "50%": { boxShadow: "0 0 35px -5px hsl(262 83% 58% / 0.45)" },
         },
         "shimmer": {
           "0%": { backgroundPosition: "-200% 0" },
@@ -120,8 +127,8 @@ export default {
         },
         "wiggle": {
           "0%, 100%": { transform: "rotate(0deg)" },
-          "25%": { transform: "rotate(-3deg)" },
-          "75%": { transform: "rotate(3deg)" },
+          "25%": { transform: "rotate(-4deg)" },
+          "75%": { transform: "rotate(4deg)" },
         },
         "bounce-in": {
           "0%": { transform: "scale(0.3)", opacity: "0" },
@@ -145,38 +152,51 @@ export default {
           "0%": { transform: "translateY(0) rotate(0deg)", opacity: "1" },
           "100%": { transform: "translateY(-200px) rotate(720deg)", opacity: "0" },
         },
-        "typewriter": {
-          "0%": { width: "0" },
-          "100%": { width: "100%" },
-        },
-        "count-up": {
-          "0%": { transform: "translateY(100%)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
-        },
         "sparkle": {
           "0%, 100%": { opacity: "0", transform: "scale(0) rotate(0deg)" },
           "50%": { opacity: "1", transform: "scale(1) rotate(180deg)" },
+        },
+        "orbit": {
+          "0%": { transform: "rotate(0deg) translateX(60px) rotate(0deg)" },
+          "100%": { transform: "rotate(360deg) translateX(60px) rotate(-360deg)" },
+        },
+        "star-twinkle": {
+          "0%, 100%": { opacity: "0.3", transform: "scale(0.8)" },
+          "50%": { opacity: "1", transform: "scale(1.2)" },
+        },
+        "gradient-flow": {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+        "neon-pulse": {
+          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(262 83% 58% / 0.2)" },
+          "50%": { boxShadow: "0 0 35px -5px hsl(262 83% 58% / 0.45)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out forwards",
+        "fade-in": "fade-in 0.6s ease-out forwards",
         "fade-out": "fade-out 0.3s ease-out",
-        "scale-in": "scale-in 0.3s ease-out",
+        "scale-in": "scale-in 0.4s ease-out",
         "slide-in-right": "slide-in-right 0.3s ease-out",
-        "float": "float 6s ease-in-out infinite",
+        "float": "float 8s ease-in-out infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "shimmer": "shimmer 3s linear infinite",
-        "wiggle": "wiggle 0.5s ease-in-out",
+        "wiggle": "wiggle 0.6s ease-in-out",
         "bounce-in": "bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards",
         "slide-up": "slide-up 0.5s ease-out forwards",
         "gradient-shift": "gradient-shift 4s ease infinite",
         "ripple": "ripple 0.6s ease-out",
         "confetti": "confetti 1s ease-out forwards",
         "sparkle": "sparkle 2s ease-in-out infinite",
+        "orbit": "orbit 20s linear infinite",
+        "star-twinkle": "star-twinkle 3s ease-in-out infinite",
+        "gradient-flow": "gradient-flow 6s ease infinite",
+        "neon-pulse": "neon-pulse 3s ease-in-out infinite",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

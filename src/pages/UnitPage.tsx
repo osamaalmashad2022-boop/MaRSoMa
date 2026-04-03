@@ -1,14 +1,16 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ClipboardCheck, BookOpen, Award, Home } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ArrowRight, ClipboardCheck, BookOpen, Award, Home, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TestRunner from "@/components/TestRunner";
 import LessonView from "@/components/LessonView";
 import { getUnit } from "@/data/stages";
+import CosmicBackground from "@/components/CosmicBackground";
 
 const UnitPage = () => {
   const { stageId, unitId } = useParams<{ stageId: string; unitId: string }>();
   const unit = getUnit(stageId!, unitId!);
+  const [activeTab, setActiveTab] = useState("pretest");
 
   if (!unit) {
     return (
@@ -24,24 +26,45 @@ const UnitPage = () => {
     description: unit.preTest.description,
   };
 
+  const tabs = [
+    { id: "pretest", label: "الاختبار القبلي", icon: ClipboardCheck },
+    ...unit.lessons.map((lesson, i) => ({ id: lesson.id, label: `الدرس ${i + 1}`, icon: BookOpen })),
+    { id: "posttest", label: "الاختبار البعدي", icon: Award },
+  ];
+
+  const currentTabIndex = tabs.findIndex((t) => t.id === activeTab);
+
+  const goNext = () => {
+    if (currentTabIndex < tabs.length - 1) setActiveTab(tabs[currentTabIndex + 1].id);
+  };
+  const goPrev = () => {
+    if (currentTabIndex > 0) setActiveTab(tabs[currentTabIndex - 1].id);
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <CosmicBackground />
+
       {/* Header */}
-      <header className="border-b glass-strong sticky top-0 z-10">
-        <div className="container max-w-4xl mx-auto flex items-center gap-3 py-3 px-4">
-          <Button variant="ghost" size="icon" className="rounded-xl" asChild>
+      <header className="border-b cosmic-glass-strong sticky top-0 z-20">
+        <div className="container max-w-5xl mx-auto flex items-center gap-3 py-3 px-5">
+          <Button variant="ghost" size="icon" className="rounded-xl hover:bg-primary/5" asChild>
             <Link to="/home">
-              <ArrowLeft className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>
-          <img src="/marsoma-logo.png" alt="MaRSoMa" width={32} height={32} className="h-8 w-auto drop-shadow-sm" />
+          <div className="h-9 w-9 rounded-lg gradient-cosmic p-0.5 shrink-0">
+            <div className="h-full w-full rounded-[6px] bg-white flex items-center justify-center">
+              <img src="/marsoma-logo.png" alt="MaRSoMa" className="h-6 w-auto" />
+            </div>
+          </div>
           <div className="flex-1 min-w-0">
-            <p className="text-xs text-muted-foreground uppercase tracking-wider font-medium">
+            <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-bold">
               {stageId?.replace(/(\d)/, " $1")}
             </p>
-            <h1 className="text-lg font-bold truncate" dir="ltr">{unit.title}</h1>
+            <h1 className="text-lg font-extrabold truncate" dir="ltr">{unit.title}</h1>
           </div>
-          <Button variant="ghost" size="icon" className="rounded-xl" asChild>
+          <Button variant="ghost" size="icon" className="rounded-xl hover:bg-primary/5" asChild>
             <Link to="/home">
               <Home className="h-4 w-4" />
             </Link>
@@ -49,40 +72,95 @@ const UnitPage = () => {
         </div>
       </header>
 
-      {/* Content */}
-      <main className="container max-w-4xl mx-auto py-8 px-4 animate-fade-in">
-        <Tabs defaultValue="pretest" className="space-y-6">
-          <TabsList className="w-full flex flex-wrap h-auto gap-1.5 glass p-1.5 rounded-2xl shadow-card">
-            <TabsTrigger value="pretest" className="gap-1.5 flex-1 min-w-[100px] rounded-xl data-[state=active]:gradient-primary data-[state=active]:text-white data-[state=active]:shadow-soft font-semibold transition-all">
-              <ClipboardCheck className="h-3.5 w-3.5" /> الاختبار القبلي
-            </TabsTrigger>
-            {unit.lessons.map((lesson, i) => (
-              <TabsTrigger key={lesson.id} value={lesson.id} className="gap-1.5 flex-1 min-w-[100px] rounded-xl data-[state=active]:gradient-primary data-[state=active]:text-white data-[state=active]:shadow-soft font-semibold transition-all">
-                <BookOpen className="h-3.5 w-3.5" /> الدرس {i + 1}
-              </TabsTrigger>
+      {/* Stepper Navigation */}
+      <div className="sticky top-[64px] z-10 border-b bg-white/60 backdrop-blur-xl">
+        <div className="container max-w-5xl mx-auto px-5 py-3">
+          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1">
+            {tabs.map((tab, i) => {
+              const isActive = tab.id === activeTab;
+              const isPast = i < currentTabIndex;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-300 shrink-0 ${
+                    isActive
+                      ? "gradient-cosmic text-white shadow-glow-purple"
+                      : isPast
+                      ? "bg-success/10 text-success border border-success/20"
+                      : "bg-muted/50 text-muted-foreground hover:bg-primary/5 hover:text-foreground border border-transparent"
+                  }`}
+                >
+                  <tab.icon className="h-3.5 w-3.5" />
+                  {tab.label}
+                  {isPast && <Sparkles className="h-3 w-3" />}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Progress indicators */}
+          <div className="flex items-center gap-1 mt-2">
+            {tabs.map((_, i) => (
+              <div
+                key={i}
+                className={`h-1 rounded-full flex-1 transition-all duration-500 ${
+                  i < currentTabIndex
+                    ? "bg-success"
+                    : i === currentTabIndex
+                    ? "gradient-cosmic"
+                    : "bg-border"
+                }`}
+              />
             ))}
-            <TabsTrigger value="posttest" className="gap-1.5 flex-1 min-w-[100px] rounded-xl data-[state=active]:gradient-accent data-[state=active]:text-white data-[state=active]:shadow-soft font-semibold transition-all">
-              <Award className="h-3.5 w-3.5" /> الاختبار البعدي
-            </TabsTrigger>
-          </TabsList>
+          </div>
+        </div>
+      </div>
 
-          <TabsContent value="pretest" className="animate-fade-in">
-            <TestRunner test={sharedPreTest} />
-          </TabsContent>
+      {/* Content */}
+      <main className="container max-w-5xl mx-auto py-8 px-5 animate-fade-in">
+        {activeTab === "pretest" && <TestRunner test={sharedPreTest} />}
 
-          {unit.lessons.map((lesson) => (
-            <TabsContent key={lesson.id} value={lesson.id} className="animate-fade-in">
-              <div className="space-y-4">
+        {unit.lessons.map((lesson) =>
+          activeTab === lesson.id ? (
+            <div key={lesson.id} className="space-y-5 animate-fade-in">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl gradient-cosmic text-white flex items-center justify-center shadow-sm">
+                  <BookOpen className="h-5 w-5" />
+                </div>
                 <h2 className="text-2xl font-extrabold" dir="ltr">{lesson.title}</h2>
-                <LessonView lesson={lesson} />
               </div>
-            </TabsContent>
-          ))}
+              <LessonView lesson={lesson} />
+            </div>
+          ) : null
+        )}
 
-          <TabsContent value="posttest" className="animate-fade-in">
-            <TestRunner test={unit.postTest} />
-          </TabsContent>
-        </Tabs>
+        {activeTab === "posttest" && <TestRunner test={unit.postTest} />}
+
+        {/* Prev / Next Navigation */}
+        <div className="flex items-center justify-between mt-10 pt-6 border-t border-border/30">
+          <Button
+            variant="outline"
+            onClick={goPrev}
+            disabled={currentTabIndex === 0}
+            className="rounded-xl gap-2 font-bold hover:bg-primary/5 disabled:opacity-30"
+          >
+            <ChevronRight className="h-4 w-4" />
+            السابق
+          </Button>
+          <span className="text-xs text-muted-foreground font-bold font-mono-num">
+            {currentTabIndex + 1} / {tabs.length}
+          </span>
+          <Button
+            variant="outline"
+            onClick={goNext}
+            disabled={currentTabIndex === tabs.length - 1}
+            className="rounded-xl gap-2 font-bold hover:bg-primary/5 disabled:opacity-30"
+          >
+            التالي
+            <ChevronLeft className="h-4 w-4" />
+          </Button>
+        </div>
       </main>
     </div>
   );

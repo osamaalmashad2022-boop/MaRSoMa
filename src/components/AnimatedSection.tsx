@@ -1,7 +1,7 @@
 import { useInView } from "@/hooks/useInView";
 import { cn } from "@/lib/utils";
 
-type AnimationType = "fade-up" | "fade-left" | "fade-right" | "zoom" | "flip";
+type AnimationType = "fade-up" | "fade-left" | "fade-right" | "zoom" | "flip" | "glow-in" | "slide-up";
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
@@ -13,24 +13,32 @@ interface AnimatedSectionProps {
 
 const animationClasses: Record<AnimationType, { hidden: string; visible: string }> = {
   "fade-up": {
-    hidden: "opacity-0 translate-y-8",
+    hidden: "opacity-0 translate-y-10",
     visible: "opacity-100 translate-y-0",
   },
   "fade-left": {
-    hidden: "opacity-0 translate-x-8",
+    hidden: "opacity-0 translate-x-10",
     visible: "opacity-100 translate-x-0",
   },
   "fade-right": {
-    hidden: "opacity-0 -translate-x-8",
+    hidden: "opacity-0 -translate-x-10",
     visible: "opacity-100 translate-x-0",
   },
   zoom: {
-    hidden: "opacity-0 scale-90",
+    hidden: "opacity-0 scale-[0.85]",
     visible: "opacity-100 scale-100",
   },
   flip: {
     hidden: "opacity-0 rotateY-12",
     visible: "opacity-100 rotateY-0",
+  },
+  "glow-in": {
+    hidden: "opacity-0 scale-95 blur-sm",
+    visible: "opacity-100 scale-100 blur-0",
+  },
+  "slide-up": {
+    hidden: "opacity-0 translate-y-16",
+    visible: "opacity-100 translate-y-0",
   },
 };
 
@@ -41,7 +49,7 @@ const AnimatedSection = ({
   className,
   as: Tag = "div",
 }: AnimatedSectionProps) => {
-  const { ref, inView } = useInView({ threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+  const { ref, inView } = useInView({ threshold: 0.12, rootMargin: "0px 0px -50px 0px" });
   const { hidden, visible } = animationClasses[animation];
 
   return (
