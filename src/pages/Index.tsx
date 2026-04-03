@@ -46,7 +46,7 @@ const Index = () => {
       <Sidebar />
 
       {/* Main Content — with sidebar offset */}
-      <div className="mr-[260px]">
+      <div className="md:mr-[260px] transition-all duration-300">
 
         {/* ===== HERO — Bento Grid Layout ===== */}
         <section className="relative px-6 pt-8 pb-12">

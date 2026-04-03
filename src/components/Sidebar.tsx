@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { GraduationCap, LayoutDashboard, Users, LogOut, Sparkles } from "lucide-react";
+import { GraduationCap, LayoutDashboard, Users, LogOut, Sparkles, Menu, X } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { cn } from "@/lib/utils";
 
@@ -11,9 +12,45 @@ const navItems = [
 const Sidebar = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Close sidebar on navigation (mobile)
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
-    <aside className="fixed top-0 right-0 h-screen w-[260px] z-40 flex flex-col cosmic-glass-strong border-l border-border/40">
+    <>
+      {/* Mobile Toggle Button */}
+      <button 
+        onClick={() => setIsOpen(true)}
+        className="md:hidden fixed top-4 right-4 z-40 p-2.5 rounded-xl cosmic-glass-strong text-primary shadow-glow-purple"
+      >
+        <Menu className="h-5 w-5" />
+      </button>
+
+      {/* Mobile Backdrop Overlay */}
+      {isOpen && (
+        <div 
+          className="md:hidden fixed inset-0 bg-background/80 backdrop-blur-sm z-40 transition-opacity"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* Sidebar Panel */}
+      <aside 
+        className={cn(
+          "fixed top-0 right-0 h-screen w-[260px] z-50 flex flex-col cosmic-glass-strong border-l border-border/40 transition-transform duration-500 ease-out",
+          !isOpen && "translate-x-full md:translate-x-0"
+        )}
+      >
+        {/* Mobile Close Button */}
+        <button 
+          onClick={() => setIsOpen(false)}
+          className="md:hidden absolute top-4 left-4 p-2 rounded-lg text-muted-foreground hover:bg-primary/10 transition-colors"
+        >
+          <X className="h-5 w-5" />
+        </button>
       {/* Logo Section */}
       <div className="p-6 pb-4">
         <div className="flex items-center gap-3">
@@ -96,6 +133,7 @@ const Sidebar = () => {
         </button>
       </div>
     </aside>
+    </>
   );
 };
 
