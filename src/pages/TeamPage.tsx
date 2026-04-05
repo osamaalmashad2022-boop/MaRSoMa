@@ -12,9 +12,9 @@ const supervisors = [
 ];
 
 const teamMembers = [
-  { name: "أميرة رضا زمزم", role: "عضو فريق التطوير", seed: 0, icon: Brain },
-  { name: "سها محمد عيد", role: "عضو فريق التطوير", seed: 1, icon: Layers },
-  { name: "مريم وائل أبو العلا", role: "عضو فريق التطوير", seed: 2, icon: Target },
+  { name: "رحمه جمال عيسى", role: "عضو فريق التطوير", seed: 0, icon: Brain },
+  { name: "سما محمد غنام", role: "عضو فريق التطوير", seed: 1, icon: Layers },
+  { name: "منه الله وليد الكناني", role: "عضو فريق التطوير", seed: 2, icon: Target },
 ];
 
 const TeamPage = () => {
