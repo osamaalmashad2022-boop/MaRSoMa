@@ -29,6 +29,11 @@ export const primary3Unit5: Unit = {
     {
       id: "lesson1",
       title: "Animals and Where They Live",
+      objectives: [
+        "Name different animal habitats.",
+        "Match animals with their correct habitats.",
+        "Talk about where different animals live.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Habitat", definition: "The natural place where an animal lives." },
@@ -67,10 +72,28 @@ export const primary3Unit5: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "match",
+          title: "Animal Habitats",
+          instructions: "Match each animal with its habitat.",
+          items: ["Camel → Desert", "Monkey → Forest", "Fish → Ocean", "Cow → Farm", "Polar bear → Arctic"],
+        },
+        {
+          type: "discuss",
+          title: "Habitat Explorer",
+          instructions: "Choose a habitat (desert, forest, ocean). Tell your partner which animals live there and why.",
+        },
+      ],
     },
     {
       id: "lesson2",
       title: "Animal Bodies",
+      objectives: [
+        "Identify animal body parts and their functions.",
+        "Use conjunctions: and, but, because, or.",
+        "Explain how animal bodies help them survive.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Fur", definition: "Soft hair that covers an animal's body to keep it warm." },
@@ -108,10 +131,28 @@ export const primary3Unit5: Unit = {
           },
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Conjunctions Practice",
+          instructions: "Complete each sentence with 'and', 'but', 'because', or 'or'.",
+          items: ["Fish live in water ___ they have fins. (because)", "The cat is small ___ the lion is big. (but)", "Do you like cats ___ dogs? (or)"],
+        },
+        {
+          type: "write",
+          title: "Describe an Animal",
+          instructions: "Choose an animal and write 3 sentences about its body using 'and', 'but', and 'because'.",
+        },
+      ],
     },
     {
       id: "lesson3",
       title: "Taking Care of Animals",
+      objectives: [
+        "Explain why we should protect animals.",
+        "Identify the /oo/ sounds in words.",
+        "List ways to help endangered animals.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Protect", definition: "To keep safe from harm or danger." },
@@ -147,10 +188,27 @@ export const primary3Unit5: Unit = {
           body: "The letters 'oo' can make two sounds:\n\nLong /uː/ — zoo, food, moon, cool, school\nShort /ʊ/ — book, look, good, wood, foot\n\n'I read a good book about animals at the zoo.'\n'The moon looks cool at night.'",
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Protect Our Animals",
+          instructions: "With a partner, list 3 things you can do to help animals in your area.",
+        },
+        {
+          type: "write",
+          title: "Save the Animals Poster",
+          instructions: "Design a mini poster with a message about protecting animals. Write 3 sentences using 'because'.",
+        },
+      ],
     },
     {
       id: "lesson4",
       title: "My Favourite Animal",
+      objectives: [
+        "Describe an animal's appearance and habitat.",
+        "Write a short paragraph about a favourite animal.",
+        "Use conjunctions in descriptive writing.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Favourite", definition: "The one you like the most." },
@@ -181,6 +239,18 @@ export const primary3Unit5: Unit = {
           type: "text",
           title: "Write About Your Favourite Animal",
           body: "Write 4-5 sentences about your favourite animal. Use these questions to help you:\n\n1. What is your favourite animal?\n2. Where does it live? (habitat)\n3. What does it look like? (fur, feathers, scales)\n4. What can it do? (fly, swim, run)\n5. Why do you like it?\n\nUse 'because', 'and', and 'but' in your sentences!",
+        },
+      ],
+      activities: [
+        {
+          type: "write",
+          title: "My Animal Report",
+          instructions: "Write 5 sentences about your favourite animal. Include: name, habitat, body, abilities, and why you like it.",
+        },
+        {
+          type: "role-play",
+          title: "Animal Show and Tell",
+          instructions: "Present your favourite animal to the class. Describe where it lives and what makes it special.",
         },
       ],
     },

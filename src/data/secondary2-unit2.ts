@@ -33,6 +33,11 @@ export const secondary2Unit2: Unit = {
     {
       id: "sec2-u8-lesson1",
       title: "Lesson 1: Change-Maker Stories",
+      objectives: [
+        "Define the core characteristics and motivations of a community change-maker.",
+        "Identify inspiring real-life examples of community transformation within Egypt.",
+        "Understand and explain the importance of persistence and creativity in overcoming social challenges.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Change-maker", definition: "A person who creates positive change in the community" },
@@ -60,10 +65,27 @@ export const secondary2Unit2: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "The First Step",
+          instructions: "Think of one 'single step' you could take today to help someone in your neighborhood. Share it with your partner.",
+        },
+        {
+          type: "write",
+          title: "Community Project Plan",
+          instructions: "Use the sequence words 'first, next, then, finally' to write a 4-sentence plan for a local project (like a park cleanup).",
+        },
+      ],
     },
     {
       id: "sec2-u8-lesson2",
       title: "Lesson 2: An Egyptian Change-Maker — RecycloBekia",
+      objectives: [
+        "Analyze the entrepreneurial journey and success of Mostafa Hemdan and RecycloBekia.",
+        "Evaluate the environmental and economic significance of recycling electronic waste (e-waste).",
+        "Discuss the integration of business goals with social and environmental responsibility.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Light a spark of hope", definition: "To create a small, new feeling of hope, especially in a difficult situation" },
@@ -102,10 +124,32 @@ export const secondary2Unit2: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "match",
+          title: "Problem and Solution",
+          instructions: "Match the challenge Mostafa faced to the solution or quality he used to overcome it.",
+          items: [
+            "Lack of funding → Innovation and persistence",
+            "Dangerous e-waste → Creating a recycling system",
+            "Lack of awareness → Lighting a 'spark of hope'",
+          ],
+        },
+        {
+          type: "discuss",
+          title: "Business with a Heart",
+          instructions: "Mostafa's vision combines business and social responsibility. Do you think all businesses should do this? Why or why not?",
+        },
+      ],
     },
     {
       id: "sec2-u8-lesson3",
       title: "Lesson 3: The Future Builders",
+      objectives: [
+        "Explore the intersection of mobile technology and social welfare through Sara Fathy's innovations.",
+        "Discuss the importance of increasing female participation in technology and engineering fields.",
+        "Master the usage of modals of obligation and necessity (must, have to, should have) in various contexts.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "App", definition: "A software application, especially for mobile devices" },
@@ -162,10 +206,32 @@ export const secondary2Unit2: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Regrets and Obligations",
+          instructions: "Complete the sentences using 'should have', 'must', or 'had to'.",
+          items: [
+            "Sara __________ (study) all night for her coding exam last week.",
+            "I didn't back up my files; I __________ (do) it earlier.",
+            "You __________ (wear) a helmet when you ride a bike; it's the law.",
+          ],
+        },
+        {
+          type: "discuss",
+          title: "Solving with Apps",
+          instructions: "If you could design one app to solve a problem in your school (like lost items or homework help), what would its secondary features be?",
+        },
+      ],
     },
     {
       id: "sec2-u8-lesson4",
       title: "Lesson 4: The Skills of a Change-Maker",
+      objectives: [
+        "Identify and explain the four essential skills required for effective community change: communication, creativity, teamwork, and perseverance.",
+        "Analyze text to understand how these skills differentiate dreamers from achievers.",
+        "Demonstrate how collaborative effort can overcome complex environmental or social obstacles.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Enthusiasm", definition: "Eagerness and lively interest or enjoyment in doing something" },
@@ -193,10 +259,27 @@ export const secondary2Unit2: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "The Hardest Skill",
+          instructions: "Of the four skills mentioned (Communication, Creativity, Teamwork, Perseverance), which one do you think is hardest to learn? Why?",
+        },
+        {
+          type: "write",
+          title: "Skills Self-Assessment",
+          instructions: "Write three sentences: Identify your strongest skill, one you want to improve, and a person who inspires you with their perseverance.",
+        },
+      ],
     },
     {
       id: "sec2-u8-lesson5",
       title: "Lesson 5: Writing a Campaign Poster",
+      objectives: [
+        "Identify the linguistic and structural features of successful campaign posters and public slogans.",
+        "Apply the use of imperative forms and motivating language to persuade a target audience.",
+        "Draft and refine a campaign poster to address a specific local community issue.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Campaign", definition: "An organized effort to achieve a goal, often involving public action" },
@@ -228,6 +311,18 @@ export const secondary2Unit2: Unit = {
           type: "text",
           title: "Target Language",
           body: "Use these expressions in your poster:\n\nLet's… / We should… / Don't forget to… / Join us to… / Together we can…\n\nWriting Task: Imagine you are living in a village. It rained heavily yesterday. The streets became muddy. Write a campaign poster persuading young people to gather to discuss the problem and take measures to clean these streets.",
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Effective Slogans",
+          instructions: "Which slogan is more powerful: 'Help Clean Mud' or 'Together for a Cleaner Village'? Why does the second one work better?",
+        },
+        {
+          type: "write",
+          title: "The Muddy Streets Poster",
+          instructions: "Write a short, direct slogan and three bullet points for your 'Muddy Streets' campaign poster using imperative verbs.",
         },
       ],
     },

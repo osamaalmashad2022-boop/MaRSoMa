@@ -90,6 +90,11 @@ export const preparatory3Unit4: Unit = {
     {
       id: "prep3-u10-l1",
       title: "Lesson 1: Desert Animals",
+      objectives: [
+        "Understand how desert animals adapt to extreme heat and water scarcity.",
+        "Identify specific adaptations of the fennec fox, desert tortoise, and camel.",
+        "Read and comprehend a detailed passage about desert survival strategies.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Adaptations", definition: "Changes that help living things survive in their environment" },
@@ -113,10 +118,28 @@ export const preparatory3Unit4: Unit = {
           imageSrc: imgDesertAnimals,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Desert Survival",
+          instructions: "Which desert adaptation mentioned in the text do you find most interesting? Why do you think it is effective?",
+        },
+        {
+          type: "write",
+          title: "Describe a Camel",
+          instructions: "Write three sentences describing how a camel is adapted to live in the sandy desert.",
+          items: ["Hump", "Wide feet", "Long eyelashes"],
+        },
+      ],
     },
     {
       id: "prep3-u10-l2",
       title: "Lesson 2: Wildlife Experts",
+      objectives: [
+        "Learn about various methods used by wildlife experts to study animals in nature.",
+        "Master the rules for converting direct questions into reported speech.",
+        "Understand the concept of behavioral and physical flexibility in animals.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Fascinated", definition: "Very interested and attracted by something" },
@@ -154,10 +177,32 @@ export const preparatory3Unit4: Unit = {
           },
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Reported Questions Practice",
+          instructions: "Convert the following direct questions into reported speech.",
+          items: [
+            "\"Where do fennec foxes live?\" → The student asked...",
+            "\"Can camels swim?\" → He wondered if...",
+            "\"How do tortoises conserve water?\" → She wanted to know...",
+          ],
+        },
+        {
+          type: "discuss",
+          title: "Ethics of Research",
+          instructions: "Why is it important for wildlife experts to study animals without disturbing them? What could happen if they did?",
+        },
+      ],
     },
     {
       id: "prep3-u10-l3",
       title: "Lesson 3: Arctic Animals",
+      objectives: [
+        "Identify the unique adaptations of polar bears, Arctic foxes, and emperor penguins.",
+        "Explain the difference between permanent and seasonal adaptations.",
+        "Describe how physical features like hollow hair and black skin help polar bears survive.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Remarkable", definition: "Amazing or extraordinary" },
@@ -195,10 +240,32 @@ export const preparatory3Unit4: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "match",
+          title: "Arctic Adaptations Match",
+          instructions: "Match the animal to its specific adaptation strategy.",
+          items: [
+            "Polar Bear → Hollow hairs and black skin",
+            "Arctic Fox → Fur changes color with seasons",
+            "Emperor Penguin → Huddling together for warmth",
+          ],
+        },
+        {
+          type: "role-play",
+          title: "The Arctic Interview",
+          instructions: "In pairs, one student acts as a wildlife researcher and the other as a student. Talk about what was discovered in the frozen north.",
+        },
+      ],
     },
     {
       id: "prep3-u10-l4",
       title: "Lesson 4: Story Time – Twenty Thousand Leagues (Ch. 4)",
+      objectives: [
+        "Read and analyze the key events and conflicts in Chapter 4 of the novel.",
+        "Evaluate Captain Nemo's complex character traits through his actions.",
+        "Compare and contrast how different characters perceive their environment.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Desperate", definition: "Having a great need or desire for something; very serious" },
@@ -213,6 +280,18 @@ export const preparatory3Unit4: Unit = {
           type: "reading",
           title: "Twenty Thousand Leagues under the Sea – Chapter Four",
           body: "Life on the Nautilus was not without risk. Once, the submarine was attacked by a giant squid in a desperate struggle on deck, Nemo and his crew fought bravely with axes and harpoons. Ned Land, fearless as always, killed the monster. Only by great effort did they escape the danger.\n\nAnother time, the submarine became trapped beneath thick ice at the South Pole. With oxygen running low, the crew worked hard to break a path to the surface. At the last moment, the Nautilus forced its way free, and the men breathed fresh air again.\n\nWhen warships appeared on the surface, Nemo attacked them without mercy, sending them to the depths.\n\nThrough such dangers, the passengers learned more about Nemo's character. He showed calm courage and remarkable leadership, yet also a cold indifference to human life. Aronnax began to admire Nemo but at the same time feared him.\n\nThe ocean, though beautiful, was also full of threats and dangers. For Aronnax it was a school of wonder; for Nemo it was a battlefield; for Ned Land it remained a prison. The tension among them grew as the voyage continued.",
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Nemo's Character",
+          instructions: "Do you think Captain Nemo is a hero or a villain? Discuss your reasons using examples from the text.",
+        },
+        {
+          type: "write",
+          title: "A Glimpse of the Future",
+          instructions: "Write a short prediction about what might happen to Ned Land if he stays on the Nautilus.",
         },
       ],
     },

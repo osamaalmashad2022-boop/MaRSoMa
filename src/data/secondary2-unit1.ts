@@ -44,6 +44,11 @@ export const secondary2Data: Stage = {
         {
           id: "sec2-u7-lesson1",
           title: "Lesson 1: Everyone Belongs to the Playground",
+          objectives: [
+            "Explain the core components of an inclusive caring community using a school playground as a primary example.",
+            "Identify the specific actions students and teachers can take to create a space where everyone feels valued and respected.",
+            "Understand the relationship between celebrating diversity and building a stronger community.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Inclusive", definition: "Creating a friendly, welcoming place where all people are included" },
@@ -72,10 +77,27 @@ export const secondary2Data: Stage = {
               ],
             },
           ],
+          activities: [
+            {
+              type: "discuss",
+              title: "Inclusive Playground Brainstorm",
+              instructions: "In small groups, brainstorm three specific changes our school could make to ensure the playground is more inclusive for students with different abilities.",
+            },
+            {
+              type: "write",
+              title: "Value Reflection",
+              instructions: "Write a short paragraph (50-70 words) describing a time when you felt truly 'valued' in a group. What did other people do to make you feel that way?",
+            },
+          ],
         },
         {
           id: "sec2-u7-lesson2",
           title: "Lesson 2: Fairness & Taking Turns",
+          objectives: [
+            "Discuss the practical application of fairness and turn-taking in group dynamics.",
+            "Analyze the impact of initiatives like 'Inclusive Play Hour' on student confidence and belonging.",
+            "Develop strategies for actively including shy or new classmates in social activities.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Encourage", definition: "To give support, confidence, or hope to someone" },
@@ -112,10 +134,27 @@ export const secondary2Data: Stage = {
               ],
             },
           ],
+          activities: [
+            {
+              type: "role-play",
+              title: "The Welcome Committee",
+              instructions: "Act out a scene where you see a new student standing alone during a game. Use polite and encouraging language to invite them to join while ensuring fairness for other players.",
+            },
+            {
+              type: "discuss",
+              title: "The Meaning of Fairness",
+              instructions: "Does fairness always mean doing the exact same thing for everyone? Discuss situations where treating people differently might actually be more 'fair'.",
+            },
+          ],
         },
         {
           id: "sec2-u7-lesson3",
           title: "Lesson 3: Acts of Gratitude",
+          objectives: [
+            "Analyze how small acts of gratitude and appreciation can decrease conflict and improve community mood.",
+            "Master the grammatical structures of Zero and First Conditionals to express general truths and future possibilities.",
+            "Identify and evaluate different ways to show thankfulness within a school or neighborhood environment.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Gratitude", definition: "The quality of being thankful and showing appreciation" },
@@ -165,10 +204,32 @@ export const secondary2Data: Stage = {
               ],
             },
           ],
+          activities: [
+            {
+              type: "write",
+              title: "Gratitude Letter",
+              instructions: "Write a short thank-you note (3-4 sentences) to a specific person in your school (a teacher, janitor, or classmate). Use at least one First Conditional sentence (e.g., 'If I continue to work hard, I will...').",
+            },
+            {
+              type: "fill-in-the-blank",
+              title: "Conditional Gratitude",
+              instructions: "Complete the following sentences using the correct Zero or First Conditional forms.",
+              items: [
+                "If we __________ (say) thank you, people __________ (feel) appreciated. (Zero)",
+                "If you __________ (write) a kind note today, your friend __________ (be) very happy. (First)",
+                "When you __________ (help) someone, they __________ (remember) your kindness. (Zero)",
+              ],
+            },
+          ],
         },
         {
           id: "sec2-u7-lesson4",
           title: "Lesson 4: Conflict Resolution",
+          objectives: [
+            "Identify and apply the three key rules for resolving conflicts: listening, polite expression, and beneficial solutions.",
+            "Analyze the role and impact of community mediators (elders, teachers, shopkeepers) in handling disagreements.",
+            "Explain how respectful communication contributes to a sense of belonging within an Egyptian community.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Argue over", definition: "To talk in an angry way because you don't agree about something" },
@@ -198,10 +259,27 @@ export const secondary2Data: Stage = {
               ],
             },
           ],
+          activities: [
+            {
+              type: "role-play",
+              title: "Mediator in Action",
+              instructions: "Role-play a disagreement over a shared resource (like the use of a computer or a football field). One student must act as a mediator and guide the others to follow the three conflict resolution rules.",
+            },
+            {
+              type: "discuss",
+              title: "The Hardest Rule",
+              instructions: "Which of the three rules (Listen without interrupting, Express feelings politely, Find a beneficial solution) is hardest for you to follow during an argument? Why?",
+            },
+          ],
         },
         {
           id: "sec2-u7-lesson5",
           title: "Lesson 5: Problem-Solution Paragraph",
+          objectives: [
+            "Understand and identify the three-part structure of a problem-solution paragraph (Problem, Solution, Result).",
+            "Learn to use specific linking words (therefore, as a result, in order to) to improve the flow of explanatory writing.",
+            "Apply the three-step writing process to draft a paragraph about a relevant community challenge.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Social isolation", definition: "Being separated from other people and having little social contact" },
@@ -236,6 +314,18 @@ export const secondary2Data: Stage = {
                 "Food waste in your school or neighborhood",
                 "Lack of green spaces in your community",
               ],
+            },
+          ],
+          activities: [
+            {
+              type: "write",
+              title: "Drafting the Result",
+              instructions: "Choose a topic from the list (e.g., Littering). Write only the 'Result' part of the paragraph, using the linking words 'as a result' or 'therefore'.",
+            },
+            {
+              type: "discuss",
+              title: "Intergenerational Solutions",
+              instructions: "Think of another problem in your school that could be solved using an 'intergenerational' approach (connecting different age groups). How would it work?",
             },
           ],
         },

@@ -30,6 +30,11 @@ export const primary3Unit6: Unit = {
     {
       id: "lesson1",
       title: "What is Honesty?",
+      objectives: [
+        "Define honesty and explain why it matters.",
+        "Read a story about making an honest choice.",
+        "List behaviours that show honesty.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Honest", definition: "Always telling the truth and doing the right thing." },
@@ -59,10 +64,27 @@ export const primary3Unit6: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "The Right Choice",
+          instructions: "Discuss: What would you do if a friend asked you to copy their answers? Why?",
+        },
+        {
+          type: "write",
+          title: "Honesty List",
+          instructions: "Write 3 examples of honest behaviour and 3 examples of dishonest behaviour.",
+        },
+      ],
     },
     {
       id: "lesson2",
       title: "Making Good Choices",
+      objectives: [
+        "Identify good and bad choices in everyday situations.",
+        "Act out a dialogue about making honest decisions.",
+        "Compare good choices with bad choices.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Backpack", definition: "A bag you carry on your back." },
@@ -97,10 +119,28 @@ export const primary3Unit6: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "role-play",
+          title: "What Would You Do?",
+          instructions: "Act out a scene: You find something that doesn't belong to you. What do you do?",
+        },
+        {
+          type: "match",
+          title: "Good vs Bad Choices",
+          instructions: "Match each situation with the honest response.",
+          items: ["You find money → Return it to the owner", "You break something → Tell the truth", "Your friend copies → Say no, it's cheating"],
+        },
+      ],
     },
     {
       id: "lesson3",
       title: "Honesty Makes Us Proud",
+      objectives: [
+        "Explain how honesty builds trust and respect.",
+        "Define integrity.",
+        "Write about a time you were honest.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Proud", definition: "Feeling happy about something good you did." },
@@ -122,10 +162,27 @@ export const primary3Unit6: Unit = {
           body: "Think about a time when you made an honest choice. Maybe you told the truth even though it was hard. Maybe you returned something that wasn't yours. Write 3-4 sentences about what happened and how you felt.",
         },
       ],
+      activities: [
+        {
+          type: "write",
+          title: "My Honest Moment",
+          instructions: "Write 3-4 sentences about a time when you made an honest choice. How did you feel?",
+        },
+        {
+          type: "discuss",
+          title: "Trust Circle",
+          instructions: "Discuss: Why do people trust honest people? Give examples from your life.",
+        },
+      ],
     },
     {
       id: "lesson4",
       title: "Honest Heroes Around Us",
+      objectives: [
+        "Identify steps to being honest when you make a mistake.",
+        "Read stories about honest behaviour.",
+        "Use vocabulary: admit, apologise, forgive, promise.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Admit", definition: "To say that something is true, especially when it is hard." },
@@ -166,6 +223,19 @@ export const primary3Unit6: Unit = {
             "4. Promise — Say you will try to do better.",
             "5. Be proud — You did the right thing!",
           ],
+        },
+      ],
+      activities: [
+        {
+          type: "order",
+          title: "Steps to Honesty",
+          instructions: "Put these steps in the correct order when you make a mistake.",
+          items: ["Admit your mistake.", "Say 'I'm sorry.'", "Try to fix it.", "Promise to do better."],
+        },
+        {
+          type: "role-play",
+          title: "The Broken Vase",
+          instructions: "Act out the story of Yasmin and the broken vase with a partner. One is Yasmin, the other is Mum.",
         },
       ],
     },

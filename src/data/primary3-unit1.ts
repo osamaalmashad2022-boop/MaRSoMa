@@ -43,6 +43,11 @@ export const primary3Data: Stage = {
         {
           id: "lesson1",
           title: "Safety at Home",
+          objectives: [
+            "Identify safety rules to follow at home.",
+            "Use imperative sentences to give instructions.",
+            "Read and understand a short passage about home safety.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Safety", definition: "Being protected from danger or harm." },
@@ -93,10 +98,28 @@ export const primary3Data: Stage = {
               body: "Ali was reading a book in his room. When he finished, he left the book on the floor. His mother said, 'Don't leave the book here. Someone may fall!' Ali listened to his mother and put the book back on the shelf. He followed the rules and was careful at home.\n\nMoral: Always follow safety rules at home to keep everyone safe.",
             },
           ],
+          activities: [
+            {
+              type: "discuss",
+              title: "Talk About Safety",
+              instructions: "Discuss with your partner: What are three safety rules you follow at home?",
+            },
+            {
+              type: "write",
+              title: "Write Safety Rules",
+              instructions: "Write 3 imperative sentences about safety at home. Use 'Don't' for negative instructions.",
+              items: ["Example: Don't touch the hot stove!", "Example: Be careful when you play!"],
+            },
+          ],
         },
         {
           id: "lesson2",
           title: "Safety in the Street",
+          objectives: [
+            "Learn safety rules for crossing the street.",
+            "Identify consonant blends /sl/, /st/, /gr/, /tr/.",
+            "Read and understand a passage about street safety.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Street", definition: "A road in a town or city." },
@@ -135,10 +158,28 @@ export const primary3Data: Stage = {
               body: "Sama stood at the corner of the street. She saw the big red stop sign. Her father said: 'Stop! Wait for the green light before you cross.' Sama looked left and right. She saw cars waiting. She waited carefully and did not walk on the street. When the green light turned on, her father said, 'Now, it is safe. You can cross the street.' Sama walked slowly and looked both ways. She crossed the street safely. Her father smiled and said, 'Well done, Sama! You followed the safety rules.'",
             },
           ],
+          activities: [
+            {
+              type: "role-play",
+              title: "Crossing the Street",
+              instructions: "Act out crossing the street safely with a partner. One person is the parent, the other is the child.",
+            },
+            {
+              type: "fill-in-the-blank",
+              title: "Consonant Blends",
+              instructions: "Complete the words with the correct blend: /sl/, /st/, /gr/, /tr/.",
+              items: ["___op (st)", "___een (gr)", "___ide (sl)", "___ain (tr)"],
+            },
+          ],
         },
         {
           id: "lesson3",
           title: "Staying Safe Everywhere",
+          objectives: [
+            "Use 'must' and 'mustn't' for rules and prohibitions.",
+            "Identify emergency helpers and their roles.",
+            "Read about staying calm in an emergency.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Policeman", definition: "A person who keeps us safe and protects the law." },
@@ -187,10 +228,29 @@ export const primary3Data: Stage = {
               ],
             },
           ],
+          activities: [
+            {
+              type: "write",
+              title: "Must or Mustn't?",
+              instructions: "Write 4 sentences using 'must' or 'mustn't' about staying safe.",
+              items: ["Example: You must wear a seat belt in the car.", "Example: You mustn't run near the street."],
+            },
+            {
+              type: "match",
+              title: "Match the Helper",
+              instructions: "Match each emergency helper with what they do.",
+              items: ["Ambulance → Takes sick people to the hospital", "Policeman → Keeps us safe", "First aid → Helps the injured"],
+            },
+          ],
         },
         {
           id: "lesson4",
           title: "My Safety Guide",
+          objectives: [
+            "Apply all safety rules learned in the unit.",
+            "Use exclamation points for strong instructions.",
+            "Create a personal safety guide.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Guide", definition: "A set of instructions that helps you know what to do." },
@@ -223,6 +283,18 @@ export const primary3Data: Stage = {
               type: "text",
               title: "Punctuation: Exclamation Point (!)",
               body: "We use exclamation points after instructions that are very important, and to show strong feelings like surprise, excitement, or warning.\n\nExamples: Stop! Don't run! Be careful! Watch out! That's amazing!",
+            },
+          ],
+          activities: [
+            {
+              type: "write",
+              title: "My Safety Guide",
+              instructions: "Create your own safety guide with 5 rules. Use imperatives and exclamation points.",
+            },
+            {
+              type: "discuss",
+              title: "Safety Role Models",
+              instructions: "Tell your partner about someone who helps keep you safe. What do they do?",
             },
           ],
         },

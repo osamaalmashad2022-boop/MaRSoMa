@@ -32,6 +32,11 @@ export const primary3Unit2: Unit = {
     {
       id: "lesson1",
       title: "Food for Energy",
+      objectives: [
+        "Identify different types of food and their benefits.",
+        "Use reflexive pronouns correctly in sentences.",
+        "Read about how food gives us energy.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Energy", definition: "The power your body needs to play, learn, and grow." },
@@ -75,10 +80,28 @@ export const primary3Unit2: Unit = {
           body: "Seleem wakes up early. He washes himself and smiles. 'I am hungry,' he says. Seleem eats fruit and vegetables for breakfast. He drinks water to stay hydrated. Later, Seleem plays football with his friends. He runs fast and feels strong. At lunch, he eats meat and rice. Seleem says to himself, 'I have so much energy!' His sister Leila wakes up and dresses herself. She tells herself to eat slowly. She enjoys bread and cheese with a glass of milk. Their friend Omar makes a salad for himself.\n\nMoral: Eat healthy food and drink water to have energy for the day.",
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "My Healthy Day",
+          instructions: "Tell your partner what you ate today. Was it healthy or unhealthy?",
+        },
+        {
+          type: "fill-in-the-blank",
+          title: "Reflexive Pronouns",
+          instructions: "Complete each sentence with the correct reflexive pronoun.",
+          items: ["I can wash ___. (myself)", "She dresses ___. (herself)", "They made lunch ___. (themselves)"],
+        },
+      ],
     },
     {
       id: "lesson2",
       title: "Healthy and Unhealthy Food",
+      objectives: [
+        "Classify foods as healthy or unhealthy.",
+        "Recognize the 'ea' and 'ee' vowel sounds.",
+        "Talk about healthy food choices.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Cheese", definition: "A food made from milk, rich in calcium." },
@@ -139,10 +162,28 @@ export const primary3Unit2: Unit = {
           body: "Both 'ea' and 'ee' make the long /iː/ sound.\n\n'ea' — usually in the middle of the word: eat, meat, beans\n'ee' — can be in the middle or at the end: cheese, green, sweet, tree\n\nExamples: 'I eat meat for lunch.' 'Cheese is made from milk.'",
         },
       ],
+      activities: [
+        {
+          type: "match",
+          title: "Healthy or Unhealthy?",
+          instructions: "Sort these foods into two groups: Healthy and Unhealthy.",
+          items: ["Milk, Soda, Eggs, Chips, Nuts, Cake, Fish, Cookies"],
+        },
+        {
+          type: "role-play",
+          title: "Breakfast Advice",
+          instructions: "Act out a conversation with a friend. Give them advice about eating a healthy breakfast.",
+        },
+      ],
     },
     {
       id: "lesson3",
       title: "Staying Healthy",
+      objectives: [
+        "List healthy habits for daily life.",
+        "Read about taking care of yourself.",
+        "Explain why healthy habits are important.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Exercise", definition: "Moving your body to keep it healthy and strong." },
@@ -173,10 +214,28 @@ export const primary3Unit2: Unit = {
           body: "Maya likes to play every day, but she often forgets to wash her hands and eat healthy food. One day, she felt sick. Her friend Salma said, 'You must take care of yourself. Wash your hands, eat healthy food, rest, and exercise.' Maya listened to Salma. She washed herself carefully, ate eggs and fruit, drank water, and rested when she felt tired. She also exercised a little every day. After a few days, Maya felt much better. She said, 'I learned that I must take care of myself to stay healthy.'\n\nMoral: Taking care of yourself helps you stay healthy and happy.",
         },
       ],
+      activities: [
+        {
+          type: "write",
+          title: "My Healthy Habits",
+          instructions: "Write 4 sentences about your healthy habits using reflexive pronouns.",
+          items: ["Example: I wash myself before eating."],
+        },
+        {
+          type: "discuss",
+          title: "Be a Health Expert",
+          instructions: "Give your partner 3 tips for staying healthy. Use the advice from the lesson.",
+        },
+      ],
     },
     {
       id: "lesson4",
       title: "Our Healthy Plan",
+      objectives: [
+        "Distinguish between countable and uncountable nouns.",
+        "Plan a healthy menu for one day.",
+        "Use 'a', 'an', and 'some' correctly.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Breakfast", definition: "The first meal of the day." },
@@ -212,6 +271,19 @@ export const primary3Unit2: Unit = {
           type: "reading",
           title: "Omar's Healthy Menu",
           body: "Omar loved eating snacks like chips, cake, and soda. He did not eat many fruits or vegetables. One day, he felt tired and had a stomachache. His teacher told him, 'Omar, you need to eat healthy foods like fruits, vegetables, and meat.' Omar followed the advice. For breakfast, he ate an apple and drank some milk. For lunch, he had some rice and some salad. For a snack, he had yogurt. He felt strong and happy again.\n\nMoral: Eating healthy food in the right amounts helps your body stay strong and happy.",
+        },
+      ],
+      activities: [
+        {
+          type: "write",
+          title: "My Healthy Menu",
+          instructions: "Create a healthy menu for one day with breakfast, lunch, dinner, and a snack. Use 'a/an' and 'some'.",
+        },
+        {
+          type: "fill-in-the-blank",
+          title: "Countable or Uncountable?",
+          instructions: "Write 'C' for countable or 'U' for uncountable next to each word.",
+          items: ["apple (C)", "rice (U)", "egg (C)", "water (U)", "sandwich (C)", "milk (U)"],
         },
       ],
     },

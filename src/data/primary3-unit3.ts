@@ -31,6 +31,11 @@ export const primary3Unit3: Unit = {
     {
       id: "lesson1",
       title: "My Hero",
+      objectives: [
+        "Describe the qualities of a hero.",
+        "Use adverbs of sequence: first and then.",
+        "Talk about why someone is a hero.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Hero", definition: "Someone who does something special, good, or brave." },
@@ -76,10 +81,28 @@ export const primary3Unit3: Unit = {
           },
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Who Is Your Hero?",
+          instructions: "Tell your partner about someone you think is a hero. Why are they a hero?",
+        },
+        {
+          type: "write",
+          title: "My Hero Sentences",
+          instructions: "Write 2 sentences about your hero using 'first' and 'then'.",
+          items: ["Example: First, my dad helps me with homework. Then, he reads me a story."],
+        },
+      ],
     },
     {
       id: "lesson2",
       title: "The Brave Firefighter",
+      objectives: [
+        "Describe the job of a firefighter.",
+        "Identify the magic 'e' and how it changes vowel sounds.",
+        "Read a short story about a firefighter rescue.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Firefighter", definition: "A person whose job is to put out fires and rescue people." },
@@ -103,10 +126,29 @@ export const primary3Unit3: Unit = {
           body: "Some words have a magic 'e' at the end. It doesn't make a sound, but it makes the vowel before it say its name.\n\nmad → made (short /a/ becomes long /eɪ/)\nhop → hope (short /o/ becomes long /oʊ/)\nkit → kite (short /i/ becomes long /aɪ/)\n\nThe magic 'e' changes the vowel sound from short to long!",
         },
       ],
+      activities: [
+        {
+          type: "order",
+          title: "Story Sequence",
+          instructions: "Put these events in the correct order using 'first' and 'then'.",
+          items: ["The alarm rang.", "Khaled climbed the ladder.", "He sprayed water.", "He saved the boy."],
+        },
+        {
+          type: "fill-in-the-blank",
+          title: "Magic 'e' Words",
+          instructions: "Add the magic 'e' to change the word. Write both words.",
+          items: ["mad → mad_ (made)", "hop → hop_ (hope)", "kit → kit_ (kite)"],
+        },
+      ],
     },
     {
       id: "lesson3",
       title: "Heroes in Our Daily Life",
+      objectives: [
+        "Identify everyday heroes and their jobs.",
+        "Read about a policewoman helping a lost child.",
+        "Explain how different people keep us safe.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Helpful", definition: "Willing to help others." },
@@ -139,10 +181,28 @@ export const primary3Unit3: Unit = {
           body: "Officer Asmaa is a policewoman in Cairo. One sunny morning, she was walking on her way to work when she saw a little child crying in the street. First, she stopped right away and spoke to him kindly, asking what was wrong. The child was lost and could not find his parents. Officer Asmaa held his hand, and told him not to be afraid. Then, she carefully searched the street until she found his parents. They were very happy. Officer Asmaa is a brave policewoman who protects people and works hard to keep the city safe.\n\nMoral: We should always be grateful for police officers who keep us safe every day.",
         },
       ],
+      activities: [
+        {
+          type: "match",
+          title: "Match the Hero",
+          instructions: "Match each hero with their job.",
+          items: ["Doctor → Helps sick people", "Police officer → Keeps the city safe", "Teacher → Teaches students", "Firefighter → Puts out fires"],
+        },
+        {
+          type: "role-play",
+          title: "Interview a Hero",
+          instructions: "One person is a doctor/police officer/teacher. The other asks questions about their job.",
+        },
+      ],
     },
     {
       id: "lesson4",
       title: "Hero Stories",
+      objectives: [
+        "Describe hero qualities using adjectives.",
+        "Write about a personal hero.",
+        "Use sequence words in writing.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Support", definition: "To help and encourage someone." },
@@ -170,6 +230,18 @@ export const primary3Unit3: Unit = {
           type: "text",
           title: "Write About Your Hero",
           body: "Think about someone you know who is a hero. It could be a family member, a teacher, or someone in your community. Write about what makes them a hero using these words: brave, smart, kind, strong, helpful, honest.\n\nUse 'first' and 'then' to describe what your hero does:\nFirst, ___. Then, ___.",
+        },
+      ],
+      activities: [
+        {
+          type: "write",
+          title: "Write About Your Hero",
+          instructions: "Write 4 sentences about your hero. Use these words: brave, kind, strong, helpful. Use 'first' and 'then'.",
+        },
+        {
+          type: "discuss",
+          title: "Share Hero Stories",
+          instructions: "Share your hero writing with a partner. What hero qualities do you both admire?",
         },
       ],
     },

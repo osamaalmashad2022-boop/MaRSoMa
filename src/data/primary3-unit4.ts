@@ -32,6 +32,11 @@ export const primary3Unit4: Unit = {
     {
       id: "lesson1",
       title: "What is Technology?",
+      objectives: [
+        "Define technology and name common devices.",
+        "Talk about how technology helps us every day.",
+        "Identify technology tools used at home and school.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Technology", definition: "Tools, machines, and devices that help us do things." },
@@ -70,10 +75,28 @@ export const primary3Unit4: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Technology Around Me",
+          instructions: "Tell your partner about 3 technology devices you use at home. What do you use them for?",
+        },
+        {
+          type: "match",
+          title: "Match the Device",
+          instructions: "Match each device with what it does.",
+          items: ["Computer → Learning and homework", "Phone → Talking to family", "Camera → Taking photos", "Internet → Finding information"],
+        },
+      ],
     },
     {
       id: "lesson2",
       title: "Technology and Learning",
+      objectives: [
+        "Explain how technology helps learning.",
+        "Use 'will' to talk about the future.",
+        "Read about using technology wisely.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Search", definition: "To look for something, especially on the internet." },
@@ -113,10 +136,28 @@ export const primary3Unit4: Unit = {
           },
         },
       ],
+      activities: [
+        {
+          type: "write",
+          title: "Future Plans",
+          instructions: "Write 3 sentences about what you will do with technology tomorrow. Use 'will'.",
+          items: ["Example: I will use the computer to do my homework."],
+        },
+        {
+          type: "discuss",
+          title: "Wise Technology Use",
+          instructions: "Discuss: How much time should children spend using technology? Why?",
+        },
+      ],
     },
     {
       id: "lesson3",
       title: "Staying Safe Online",
+      objectives: [
+        "List rules for internet safety.",
+        "Identify the /tion/ ending sound.",
+        "Explain why online safety is important.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Password", definition: "A secret word or phrase used to protect your account." },
@@ -161,10 +202,28 @@ export const primary3Unit4: Unit = {
           body: "Many words end with '-tion'. This makes a /ʃən/ sound.\n\nExamples: information, station, education, question, invention, protection\n\n'I found important information on the internet.'\n'Education is very important for everyone.'",
         },
       ],
+      activities: [
+        {
+          type: "true-false",
+          title: "Safe or Unsafe?",
+          instructions: "Say if each action is safe or unsafe online.",
+          items: ["Sharing your password → Unsafe", "Asking a parent before going online → Safe", "Talking to strangers online → Unsafe", "Reading educational websites → Safe"],
+        },
+        {
+          type: "write",
+          title: "My Safety Promise",
+          instructions: "Write 3 sentences about how you will stay safe online. Use 'will' and 'won't'.",
+        },
+      ],
     },
     {
       id: "lesson4",
       title: "Technology in the Future",
+      objectives: [
+        "Imagine how technology will change in the future.",
+        "Use 'Will' questions and answers.",
+        "Write about future technology predictions.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Robot", definition: "A machine that can do tasks like a human." },
@@ -211,6 +270,18 @@ export const primary3Unit4: Unit = {
             "Doctors will cure more diseases.",
             "We will use clean energy from the sun.",
           ],
+        },
+      ],
+      activities: [
+        {
+          type: "write",
+          title: "My Future Invention",
+          instructions: "Draw and write about a future invention. What will it do? How will it help people?",
+        },
+        {
+          type: "discuss",
+          title: "Future Predictions",
+          instructions: "Ask and answer with a partner using 'Will': Will robots help at home? Will cars fly?",
         },
       ],
     },

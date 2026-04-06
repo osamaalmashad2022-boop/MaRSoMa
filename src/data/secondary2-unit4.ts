@@ -133,6 +133,11 @@ export const secondary2Unit4: Unit = {
     {
       id: "sec2-u4-l1",
       title: "Lesson 1: The Importance of Having a Hobby",
+      objectives: [
+        "Explain the psychological benefits of hobbies in balancing intense school intensity and stress.",
+        "Understand how focusing on a single creative task can lead to mental relaxation and personal growth.",
+        "Analyze a narrative about how a hobby can reshape a student's identity beyond grades.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Overwhelmed", definition: "Unable to cope because of too much pressure" },
@@ -156,10 +161,27 @@ export const secondary2Unit4: Unit = {
           imageSrc: imgFindPassion,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Disconnecting from Stress",
+          instructions: "The text mentions 'disconnecting' from stress. What is one activity you do that makes you forget about school deadlines? Share your experience.",
+        },
+        {
+          type: "write",
+          title: "Beyond the Grades",
+          instructions: "Write three sentences describing a skill or interest you have that is not related to any school subject. How does it make you feel?",
+        },
+      ],
     },
     {
       id: "sec2-u4-l2",
       title: "Lesson 2: New Hobbies",
+      objectives: [
+        "Identify the shared benefits of diverse hobbies like photography, baking, and learning an instrument.",
+        "Discuss the value of trial and error when exploring new personal interests.",
+        "Understand how hobbies build social connections and improve overall mental health.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Photography", definition: "The art of taking and processing photographs" },
@@ -188,10 +210,32 @@ export const secondary2Unit4: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "match",
+          title: "Hobby and Skill",
+          instructions: "Match the hobby mentioned in the text with the quality or challenge it required.",
+          items: [
+            "Baking → Patience and careful measuring",
+            "Photography → Original plans being changed by weather",
+            "Ukulele → Improving a little each day",
+          ],
+        },
+        {
+          type: "discuss",
+          title: "A Week-Long Trial",
+          instructions: "If you had to try one of these three hobbies for a single week, which one would you pick? What would be your 'original plan' for it?",
+        },
+      ],
     },
     {
       id: "sec2-u4-l3",
       title: "Lesson 3: Semi-Modals (Expectation Structures)",
+      objectives: [
+        "Master the usage of semi-modals like 'supposed to', 'meant to', 'seemed to', and 'appeared to' for expectations.",
+        "Differentiate between intended purposes and actual impressions in past and present contexts.",
+        "Identify and correct common grammatical errors involving modal-like structures.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Supposed to", definition: "Expected or required to do something" },
@@ -225,13 +269,35 @@ export const secondary2Unit4: Unit = {
         {
           type: "text",
           title: "Making the Most of Free Time",
-          body: "A neighborhood decided to use their free time better. The narrator chose jogging, which seemed to be simple but turned out to be challenging. Mariam tried learning Turkish, discovering that pronunciation needs effort. Hossam's gym training was harder than expected. Everyone agreed that using free time doesn't always go as planned, but the experience itself is valuable.",
+            body: "A neighborhood decided to use their free time better. The narrator chose jogging, which seemed to be simple but turned out to be challenging. Mariam tried learning Turkish, discovering that pronunciation needs effort. Hossam's gym training was harder than expected. Everyone agreed that using free time doesn't always go as planned, but the experience itself is valuable.",
+        },
+      ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Expectation vs Reality",
+          instructions: "Complete the sentences using 'supposed to' or 'seemed to' based on the context of free time activities.",
+          items: [
+            "The movie was __________ (be) exciting, but I found it quite boring.",
+            "Learning the piano __________ (be) difficult, but she caught on quickly.",
+            "We were __________ (meet) at the park, but it started to rain.",
+          ],
+        },
+        {
+          type: "discuss",
+          title: "The Plan vs the Result",
+          instructions: "Think of a time when a plan (like a trip or a project) didn't go as it was 'meant to'. What actually happened?",
         },
       ],
     },
     {
       id: "sec2-u4-l4",
       title: "Lesson 4: When a Hobby Becomes Income",
+      objectives: [
+        "Describe the transition from a relaxing hobby to a profitable entrepreneurial venture.",
+        "Evaluate the market value of 'handmade' and 'customized' products within a school community.",
+        "Discuss the qualities like practice and creativity that turn a small idea into a business opportunity.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Entrepreneurship", definition: "The activity of starting and running a small business" },
@@ -247,6 +313,18 @@ export const secondary2Unit4: Unit = {
           type: "reading",
           title: "A Small Idea That Became Something Bigger",
           body: "When I started Grade 11, I often felt that school took up all my time. Between homework, projects, and exams, my days felt the same. One evening, while scrolling through videos online, I saw a tutorial on making handmade key chains using beads and threads. It looked fun, so I tried it just to relax.\n\nAt first, the key chains were supposed to be simple, but mine kept coming out uneven. Still, I enjoyed the process. Every evening, I practiced a little, and my designs slowly improved. One day, I brought a few key chains to school, and my friends were surprised that I had made them myself. Two classmates asked if I could make key chains with their initials—and they offered to pay.\n\nI didn't expect to earn money from something I did for fun, but soon teachers and other students began requesting customized designs. I created a small price list and even started making special key chains for school events. What began as a way to relax became a small source of income.\n\nBy the end of the term, I learned that hobbies are not just for enjoyment. With creativity, practice, and effort, a hobby can grow into an opportunity. Sometimes, what you do in your free time can become your first step toward entrepreneurship.",
+        },
+      ],
+      activities: [
+        {
+          type: "role-play",
+          title: "Customized Order",
+          instructions: "In pairs, one student is the customer and the other is the key chain artist. Discuss a customized design, the initials needed, and the price.",
+        },
+        {
+          type: "write",
+          title: "Hobby Ad",
+          instructions: "Imagine you have a hobby (like baking or drawing). Write a 4-line advertisement for your classmates, encouraging them to buy your handmade work.",
         },
       ],
     },

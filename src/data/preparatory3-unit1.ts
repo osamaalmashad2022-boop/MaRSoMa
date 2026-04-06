@@ -102,6 +102,11 @@ export const preparatory3Data: Stage = {
         {
           id: "prep3-u7-l1",
           title: "Lesson 1: The History of Sport",
+          objectives: [
+            "Trace the history of sport from ancient times to the modern era.",
+            "Learn vocabulary related to sports history.",
+            "Read and comprehend a passage about the evolution of sport.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Knight", definition: "A soldier in the Middle Ages who served a king" },
@@ -125,10 +130,28 @@ export const preparatory3Data: Stage = {
               imageSrc: imgHistoryOfSport,
             },
           ],
+          activities: [
+            {
+              type: "discuss",
+              title: "Sport Through the Ages",
+              instructions: "Discuss: How have sports changed from ancient times to today? Name one sport from the past and one modern sport.",
+            },
+            {
+              type: "order",
+              title: "Timeline of Sports",
+              instructions: "Put these sports events in chronological order.",
+              items: ["Ancient Greek Olympics", "Roman gladiator fights", "Medieval archery and fencing", "Modern Olympics restarted in 1896"],
+            },
+          ],
         },
         {
           id: "prep3-u7-l2",
           title: "Lesson 2: A True Champion",
+          objectives: [
+            "Read about Mohamed Rashwan and his act of sportsmanship.",
+            "Use 'used to' for past habits correctly.",
+            "Explain what makes someone a true champion.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Honor", definition: "Great respect and admiration for someone" },
@@ -170,10 +193,28 @@ export const preparatory3Data: Stage = {
               },
             },
           ],
+          activities: [
+            {
+              type: "write",
+              title: "True Champion Reflection",
+              instructions: "Write a paragraph: Do you agree that Rashwan was a 'true champion' even though he won silver? Why or why not?",
+            },
+            {
+              type: "fill-in-the-blank",
+              title: "Used to Practice",
+              instructions: "Complete the sentences with the correct form of 'used to'.",
+              items: ["He ___ (play) judo every day.", "Did you ___ (watch) the Olympics?", "She didn't ___ (like) sports."],
+            },
+          ],
         },
         {
           id: "prep3-u7-l3",
           title: "Lesson 3: Sports Events",
+          objectives: [
+            "Learn about the Olympic Games and their values.",
+            "Identify facts about Egypt's participation in the Olympics.",
+            "Discuss the meaning of the Olympic spirit.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Athletes", definition: "People who compete in sports" },
@@ -197,10 +238,28 @@ export const preparatory3Data: Stage = {
               imageSrc: imgOlympicSpirit,
             },
           ],
+          activities: [
+            {
+              type: "true-false",
+              title: "Olympic Facts",
+              instructions: "Decide if each statement is True or False.",
+              items: ["The Olympic Games began in Rome. (False — Greece)", "The five rings represent five continents. (True)", "Egypt joined the modern Olympics in 1912. (True)"],
+            },
+            {
+              type: "discuss",
+              title: "The Olympic Spirit",
+              instructions: "Discuss: What does 'the Olympic spirit' mean? How can we show it in our school?",
+            },
+          ],
         },
         {
           id: "prep3-u7-l4",
           title: "Lesson 4: Story Time — Twenty Thousand Leagues Under the Sea (Ch. 1)",
+          objectives: [
+            "Read and summarize Chapter 1 of the novel.",
+            "Identify key characters: Aronnax, Conseil, and Ned Land.",
+            "Describe the mystery of the 'sea monster'.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Monster", definition: "A large, frightening creature" },
@@ -218,10 +277,27 @@ export const preparatory3Data: Stage = {
               body: "Jules Verne (1828–1905) was a French novelist and is often called the 'Father of Science Fiction.' His most famous works include Journey to the Center of the Earth, Around the World in Eighty Days, and Twenty Thousand Leagues Under the Sea.\n\nIn the mid-nineteenth century, sailors across the oceans reported a strange creature. Ships claimed to have seen a huge 'sea monster,' moving faster than whales and smashing ships with terrible force. Newspapers described it as both marvelous and terrifying. Public debate grew so intense that a voyage was launched to capture or kill the beast.\n\nProfessor Pierre Aronnax, a French marine scientist, was invited to join the voyage. His loyal servant Conseil and a Canadian harpooner named Ned Land also became part of the crew. They boarded a warship and set sail across the Pacific. For months, they searched without success.\n\nAt last, one evening, a long glowing shape appeared in the waves. The crew chased it desperately. Cannon fire and harpoons were launched. Suddenly, the 'monster' turned and hit the ship with its steel-like body. Aronnax and his companions were thrown into the sea. Struggling to survive, they swam toward the mysterious creature. To their astonishment, they discovered it was not an animal at all — but a man-made submarine of special design. Their adventure beneath the oceans was about to begin.",
             },
           ],
+          activities: [
+            {
+              type: "discuss",
+              title: "Predict What Happens Next",
+              instructions: "What do you think will happen to Aronnax and his companions inside the submarine? Share your predictions.",
+            },
+            {
+              type: "write",
+              title: "Character Profile",
+              instructions: "Choose one character (Aronnax, Conseil, or Ned Land) and write 3 sentences describing them based on Chapter 1.",
+            },
+          ],
         },
         {
           id: "prep3-u7-l5",
           title: "Lesson 5: Let's Talk — Favorite Sports",
+          objectives: [
+            "Talk about favourite sports and give reasons.",
+            "Use conversational expressions to discuss hobbies.",
+            "Practice speaking about personal interests.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Competition", definition: "An event where people try to win" },
@@ -248,10 +324,27 @@ export const preparatory3Data: Stage = {
               ],
             },
           ],
+          activities: [
+            {
+              type: "role-play",
+              title: "Sports Interview",
+              instructions: "Interview your partner about their favourite sport. Ask: What is it? Why do you like it? How often do you play?",
+            },
+            {
+              type: "write",
+              title: "My Favourite Sport",
+              instructions: "Write a short paragraph about your favourite sport. Include: what, why, where, and how often.",
+            },
+          ],
         },
         {
           id: "prep3-u7-l6",
           title: "Lesson 6: Writing a Sports Report",
+          objectives: [
+            "Identify the structure of a sports report.",
+            "Write a sports report with headline, events, and conclusion.",
+            "Use appropriate vocabulary for sports writing.",
+          ],
           vocabulary: {
             flashcards: [
               { term: "Tournament", definition: "A series of games to decide the best team or player" },
@@ -275,6 +368,18 @@ export const preparatory3Data: Stage = {
                 "Main Events: Highlight key moments (goals, saves, etc.)",
                 "Conclusion: What was learned from the event",
               ],
+            },
+          ],
+          activities: [
+            {
+              type: "write",
+              title: "Write a Sports Report",
+              instructions: "Write a short sports report about a school competition. Include: headline, introduction, main events, and a conclusion.",
+            },
+            {
+              type: "discuss",
+              title: "Teamwork and Fair Play",
+              instructions: "Discuss: Why is fair play more important than winning? Share a personal example.",
             },
           ],
         },

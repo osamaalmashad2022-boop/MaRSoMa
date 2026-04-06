@@ -90,6 +90,11 @@ export const preparatory3Unit5: Unit = {
     {
       id: "prep3-u11-l1",
       title: "Lesson 1: Travel Tales",
+      objectives: [
+        "Read and analyze a personal travel narrative about a trip to Wadi El-Rayan.",
+        "Master vocabulary related to travel, weather, and memorable experiences.",
+        "Identify the turning point and the moral of the story in a travel tale.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Unforgettable", definition: "Impossible to forget; very memorable" },
@@ -113,10 +118,27 @@ export const preparatory3Unit5: Unit = {
           imageSrc: imgTravelTales,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Your Travel Tales",
+          instructions: "Describe an unforgettable or unusual trip you have taken. What made it special? Was there an unexpected event?",
+        },
+        {
+          type: "write",
+          title: "Summarizing the Trip",
+          instructions: "Write a short summary (4-5 sentences) of the Wadi El-Rayan trip, specifically focusing on how the family's situation changed.",
+        },
+      ],
     },
     {
       id: "prep3-u11-l2",
       title: "Lesson 2: Past Tenses Review",
+      objectives: [
+        "Review and differentiate between Past Simple, Past Continuous, and Past Perfect tenses.",
+        "Learn to sequence multiple past events using appropriate time markers like 'while', 'when', and 'by the time'.",
+        "Apply correct past tense constructions in various contextual scenarios.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Past Simple", definition: "A tense used for completed actions in the past (e.g., I visited)" },
@@ -151,10 +173,32 @@ export const preparatory3Unit5: Unit = {
           body: "1. By the time we reached the hotel, the sun _____ (set). → had set\n2. While I _____ (walk) in the old city, I found a beautiful shop. → was walking\n3. We _____ (visit) three cities during our trip last year. → visited\n4. She _____ (already / finish) packing before the taxi came. → had already finished",
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Tense Selection",
+          instructions: "Choose the correct past tense for each situation to complete the story of a lost traveler.",
+          items: [
+            "Yesterday, I _____ (drive) when my car broke down.",
+            "I realized I _____ (forget) my phone at home.",
+            "Luckily, a kind man _____ (stop) to help me."
+          ],
+        },
+        {
+          type: "write",
+          title: "My Busy Morning",
+          instructions: "Write a short paragraph describing a busy morning you had. Use at least one example of each: Past Simple, Past Continuous, and Past Perfect.",
+        },
+      ],
     },
     {
       id: "prep3-u11-l3",
       title: "Lesson 3: A Solo Journey",
+      objectives: [
+        "Understand the themes of determination and hospitality in the context of a solo journey.",
+        "Identify the geographical landmarks and governorates mentioned during the travel from Cairo to Luxor.",
+        "Discuss the internal changes a traveler might experience during a long trip.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Solo", definition: "Done alone, without anyone else" },
@@ -178,10 +222,32 @@ export const preparatory3Unit5: Unit = {
           imageSrc: imgSoloJourney,
         },
       ],
+      activities: [
+        {
+          type: "role-play",
+          title: "Road Trip Interview",
+          instructions: "In pairs, act out an interview. One is a reporter, and the other is the solo traveler. Ask about the challenges and the kindness of strangers.",
+        },
+        {
+          type: "match",
+          title: "Route Discovery",
+          instructions: "Match the following locations or landmarks to their descriptions based on the text.",
+          items: [
+            "Cairo → Busy streets and starting point",
+            "Minya → Peaceful farmlands and historic landmarks",
+            "Luxor → Incredible desert sunset and destination",
+          ],
+        },
+      ],
     },
     {
       id: "prep3-u11-l4",
       title: "Lesson 4: Story Time – Twenty Thousand Leagues (Ch. 5)",
+      objectives: [
+        "Read and analyze the character motivations of Aronnax, Nemo, and Ned Land in Chapter 5.",
+        "Discuss the ethical dilemma between the desire for scientific discovery and the need for freedom.",
+        "Understand how the setting (ocean depths) influences the characters' perspectives.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Hesitated", definition: "Paused before doing something because of uncertainty" },
@@ -196,6 +262,18 @@ export const preparatory3Unit5: Unit = {
           type: "reading",
           title: "Secrets of Captain Nemo – Chapter Five",
           body: "As the Nautilus traveled across the world's oceans, Aronnax became more determined to learn the truth about Nemo. The captain was clearly a man of wealth, education, and sorrow, but he kept his past hidden.\n\nNemo's actions sometimes confirmed that. He attacked warships without hesitation, claiming to fight against cruelty. Yet he never told the details of his personal story. To Aronnax, Nemo was both brave and mysterious.\n\nMeanwhile, Ned Land planned escape. He argued that no man had the right to keep them prisoners, no matter how wonderful the submarine. Aronnax hesitated, torn between scientific discovery and freedom. Conseil remained calm and loyal to his master.\n\nOne evening, as Nemo guided the submarine through a graveyard of sunken ships, Aronnax realized the captain saw himself as part of the dead world beneath the waves. The mystery of Nemo deepened, but so did the companions' determination to find a way home.",
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "The Price of Discovery",
+          instructions: "If you were Aronnax, would you stay on the Nautilus to learn more secrets, or would you try to escape with Ned Land? Why?",
+        },
+        {
+          type: "write",
+          title: "Captain Nemo's Secret",
+          instructions: "Based on the text, write a short character sketch explaining why Nemo might be described as a man of 'wealth, education, and sorrow'.",
         },
       ],
     },

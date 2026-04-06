@@ -31,13 +31,22 @@ export interface ContentSection {
   items?: string[];
 }
 
+export interface Activity {
+  type: "fill-in-the-blank" | "match" | "order" | "discuss" | "write" | "true-false" | "role-play";
+  title: string;
+  instructions: string;
+  items?: string[];
+}
+
 export interface Lesson {
   id: string;
   title: string;
+  objectives?: string[];
   vocabulary?: {
     flashcards: Flashcard[];
   };
   content: ContentSection[];
+  activities?: Activity[];
 }
 
 export interface Question {

@@ -143,6 +143,11 @@ export const preparatory3Unit3: Unit = {
     {
       id: "prep3-u3-l1",
       title: "Lesson 1: AI vs Robots",
+      objectives: [
+        "Distinguish between artificial intelligence and robots.",
+        "Explain the limitations of AI.",
+        "Compare AI and robots using a table.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Artificial Intelligence (AI)", definition: "Computer systems that can perform tasks that normally need human intelligence" },
@@ -185,10 +190,28 @@ export const preparatory3Unit3: Unit = {
           imageSrc: imgAiVsRobots,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "AI in Your Life",
+          instructions: "Name 3 examples of AI you use daily (phone assistant, recommendations, etc.). How do they help you?",
+        },
+        {
+          type: "true-false",
+          title: "AI or Robot?",
+          instructions: "Decide: Is each example AI, a robot, or both?",
+          items: ["Siri on your phone (AI)", "Factory arm building cars (Robot)", "Self-driving car (Both)", "Spam email filter (AI)"],
+        },
+      ],
     },
     {
       id: "prep3-u3-l2",
       title: "Lesson 2: AI Technology & Creativity",
+      objectives: [
+        "Discuss whether AI can be truly creative.",
+        "Form the Future Simple Passive correctly.",
+        "Analyze examples of AI-generated art and music.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Innovation", definition: "A new idea, method, or invention" },
@@ -231,10 +254,28 @@ export const preparatory3Unit3: Unit = {
           imageSrc: imgAiCreativity,
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Future Simple Passive",
+          instructions: "Rewrite each sentence in the Future Simple Passive.",
+          items: ["Scientists will develop new AI. → New AI ___ by scientists.", "AI will compose the music. → The music ___."],
+        },
+        {
+          type: "discuss",
+          title: "Creative Debate",
+          instructions: "Debate: 'AI creativity is real creativity.' Do you agree or disagree? Give reasons.",
+        },
+      ],
     },
     {
       id: "prep3-u3-l3",
       title: "Lesson 3: A Robot Teacher",
+      objectives: [
+        "Compare the advantages of human teachers vs. robot teachers.",
+        "Read a story about AI in education.",
+        "Express opinions about technology in the classroom.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Customize", definition: "To modify or build according to individual needs" },
@@ -270,10 +311,27 @@ export const preparatory3Unit3: Unit = {
           imageSrc: imgRobotTeacher,
         },
       ],
+      activities: [
+        {
+          type: "write",
+          title: "Human vs Robot Teacher",
+          instructions: "Write a short opinion paragraph: Would you prefer a human teacher or a robot teacher? Give 3 reasons.",
+        },
+        {
+          type: "role-play",
+          title: "Interview TeachBot",
+          instructions: "One partner is a student, the other is TeachBot. Act out a conversation where the student asks questions and notices TeachBot's limitations.",
+        },
+      ],
     },
     {
       id: "prep3-u3-l4",
       title: "Lesson 4: The School Garden Project — Ch.3",
+      objectives: [
+        "Read about problem-solving and perseverance.",
+        "Match problems with their solutions from the story.",
+        "Explain the importance of not giving up.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Initiative", definition: "The ability to take action and solve problems without being told" },
@@ -305,6 +363,19 @@ export const preparatory3Unit3: Unit = {
           title: "Facing Challenges",
           alt: "Students looking at a muddy, rain-damaged garden area with determined expressions, holding letters and donation boxes.",
           imageSrc: imgFacingChallenges,
+        },
+      ],
+      activities: [
+        {
+          type: "match",
+          title: "Problem → Solution",
+          instructions: "Match each problem with the correct solution from the story.",
+          items: ["Not enough money → Organized a bake sale", "Budget still short → Asked businesses for donations", "Team wanted to quit → Nour encouraged perseverance"],
+        },
+        {
+          type: "write",
+          title: "Never Give Up",
+          instructions: "Write about a time you faced a challenge and persevered. What did you learn?",
         },
       ],
     },

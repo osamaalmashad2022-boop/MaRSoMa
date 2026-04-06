@@ -33,6 +33,11 @@ export const secondary2Unit3: Unit = {
     {
       id: "sec2-u9-lesson1",
       title: "Lesson 1: Voices On The Wall",
+      objectives: [
+        "Analyze the social and psychological impact of murals in urban neighborhoods.",
+        "Understand how street art can communicate complex themes of hope, unity, and peace.",
+        "Identify the steps involved in transforming a community through collective artistic action.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Mural", definition: "A large picture painted on a wall" },
@@ -60,10 +65,27 @@ export const secondary2Unit3: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "My Street's Symbol",
+          instructions: "If you could paint one large mural in your neighborhood to make people feel 'visible' and happy, what symbol would you choose? Why?",
+        },
+        {
+          type: "write",
+          title: "Artistic Impact",
+          instructions: "Explain in 3-4 sentences how Salma's mural led to real physical changes in her neighborhood (cleaning, tourism, etc.).",
+        },
+      ],
     },
     {
       id: "sec2-u9-lesson2",
       title: "Lesson 2: The Art of Storytelling",
+      objectives: [
+        "Explain the historical and cultural importance of oral tradition in Egyptian society.",
+        "Identify and practice non-verbal techniques like gestures and voice modulation used in storytelling.",
+        "Discuss how modern digital platforms are preserving and evolving traditional storytelling methods.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Gather", definition: "To come together in a group" },
@@ -102,10 +124,27 @@ export const secondary2Unit3: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "The Empty Chair",
+          instructions: "Why do you think the café keeps Uncle Farid's chair empty? What does this say about the power of his stories?",
+        },
+        {
+          type: "role-play",
+          title: "Minute Masterpiece",
+          instructions: "In turns, tell a 1-minute story about a 'clever child' or an 'honest merchant'. Use at least three different hand gestures and two voice changes.",
+        },
+      ],
     },
     {
       id: "sec2-u9-lesson3",
       title: "Lesson 3: The Language of Music",
+      objectives: [
+        "Identify the ways music can be used to raise environmental awareness and initiate social action.",
+        "Differentiate between Stative verbs (feelings/states) and Action verbs in grammatical context.",
+        "Explain how the use of rhythm, lyrics, and concerts makes an educational message more memorable.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Environmental awareness", definition: "Understanding of issues affecting the natural world" },
@@ -160,10 +199,32 @@ export const secondary2Unit3: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Stative or Action?",
+          instructions: "Decide if the verb in parentheses should be in the simple or continuous form.",
+          items: [
+            "Hassan __________ (own) a beautiful guitar. (stative)",
+            "Listen! He __________ (play) the new song about the Nile now. (action)",
+            "I __________ (see) what you mean about environmental awareness. (stative)",
+          ],
+        },
+        {
+          type: "write",
+          title: "Create a Lyric",
+          instructions: "Write a 4-line rhyming lyric for a song that encourages people to keep the Nile clean.",
+        },
+      ],
     },
     {
       id: "sec2-u9-lesson4",
       title: "Lesson 4: Can Art Change Society?",
+      objectives: [
+        "Contrast and evaluate different perspectives in a formal debate regarding art’s ability to drive social progress.",
+        "Identify the complementary roles of emotional inspiration (art) and structural policy (laws/education).",
+        "Synthesize multiple points of view into a balanced summary or conclusion.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Awareness", definition: "Understanding or knowledge about an issue" },
@@ -200,10 +261,27 @@ export const secondary2Unit3: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Nadia vs Omar",
+          instructions: "Whose argument do you find more convincing? Why? Can you give an example of a movie or song that actually changed how you behave?",
+        },
+        {
+          type: "role-play",
+          title: "The Youth Forum",
+          instructions: "In groups of three, role-play the debate. One is Nadia, one is Omar, and one is the Moderator. Try to reach a shared conclusion.",
+        },
+      ],
     },
     {
       id: "sec2-u9-lesson5",
       title: "Lesson 5: Writing an Opinion Paragraph",
+      objectives: [
+        "Master the five-step structure for writing a persuasive and cohesive opinion paragraph.",
+        "Discuss the theme of art as a 'universal language' that transcends cultural and linguistic borders.",
+        "Apply critical thinking to define the social responsibilities of artists in modern society.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Opinion", definition: "A personal view or judgment about something" },
@@ -238,6 +316,18 @@ export const secondary2Unit3: Unit = {
             "Or: 'Should art always teach, or can it simply entertain?'",
             "Use: I believe… / In my opinion… / For these reasons…",
           ],
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Artist Responsibility",
+          instructions: "Brainstorm: Should artists be required to teach good values, or is it enough if they just make something beautiful?",
+        },
+        {
+          type: "write",
+          title: "The Opinion Draft",
+          instructions: "Write a topic sentence and two supporting reasons for your opinion on the 'universal language' of art mentioned in the model.",
         },
       ],
     },

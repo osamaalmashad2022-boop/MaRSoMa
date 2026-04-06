@@ -134,6 +134,11 @@ export const preparatory3Unit2: Unit = {
     {
       id: "prep3-u2-l1",
       title: "Lesson 1: Stay Connected",
+      objectives: [
+        "Explain what makes relationships strong.",
+        "List tips for better family communication.",
+        "Read a passage about building strong bonds.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Communication", definition: "Sharing ideas, feelings, or information with others" },
@@ -170,10 +175,27 @@ export const preparatory3Unit2: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Family Communication",
+          instructions: "Share with your partner: How does your family communicate? What makes your relationship strong?",
+        },
+        {
+          type: "write",
+          title: "Communication Tips",
+          instructions: "Write 3 tips for improving communication in your family. Start each with an imperative verb.",
+        },
+      ],
     },
     {
       id: "prep3-u2-l2",
       title: "Lesson 2: Communication Challenges",
+      objectives: [
+        "Identify common communication challenges.",
+        "Read a story about misunderstanding between friends.",
+        "Suggest solutions for communication problems.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Challenge", definition: "A difficult task or situation" },
@@ -208,10 +230,27 @@ export const preparatory3Unit2: Unit = {
           imageSrc: imgWorkingTogether,
         },
       ],
+      activities: [
+        {
+          type: "role-play",
+          title: "Solving Misunderstandings",
+          instructions: "Act out a scene: Two friends misunderstand each other. Find a way to resolve the problem through calm communication.",
+        },
+        {
+          type: "write",
+          title: "Empathy Response",
+          instructions: "Rewrite these sentences using empathy: 'You always forget!' → 'I feel upset when you forget because...'",
+        },
+      ],
     },
     {
       id: "prep3-u2-l3",
       title: "Lesson 3: The Silent Dinner",
+      objectives: [
+        "Read and discuss the impact of phones on family time.",
+        "Use the Third Conditional to talk about imaginary past situations.",
+        "Suggest ways to reconnect with family.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Distracted", definition: "Unable to concentrate because your mind is on something else" },
@@ -254,10 +293,28 @@ export const preparatory3Unit2: Unit = {
           imageSrc: imgPhoneFreeDinner,
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Third Conditional Practice",
+          instructions: "Complete each sentence with the correct Third Conditional form.",
+          items: ["If they ___ (talk) more, they ___ (not argue).", "If Omar ___ (not suggest) phone-free dinners, the family ___  (not reconnect)."],
+        },
+        {
+          type: "discuss",
+          title: "Phone-Free Challenge",
+          instructions: "Discuss: Should families have phone-free time? When? For how long? Give reasons.",
+        },
+      ],
     },
     {
       id: "prep3-u2-l4",
       title: "Lesson 4: The School Garden Project — Ch.2",
+      objectives: [
+        "Read Chapter 2 of the school garden story.",
+        "Describe the roles of team members.",
+        "Explain how teamwork leads to success.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Research", definition: "Careful study to discover new facts or information" },
@@ -292,10 +349,27 @@ export const preparatory3Unit2: Unit = {
           imageSrc: imgTheTeam,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Team Building",
+          instructions: "If you could start a school project, what would it be? Who would be on your team and why?",
+        },
+        {
+          type: "write",
+          title: "Team Proposal",
+          instructions: "Write a short proposal for a school project. Include: the idea, team roles, and why it matters.",
+        },
+      ],
     },
     {
       id: "prep3-u2-l5",
       title: "Lesson 5: Proper Communication Skills",
+      objectives: [
+        "Identify good and bad communication habits.",
+        "Practice active listening skills.",
+        "Use 'I feel...' statements to express emotions.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Apologize", definition: "To say sorry for something you have done" },
@@ -337,10 +411,28 @@ export const preparatory3Unit2: Unit = {
           imageSrc: imgFriendlyChat,
         },
       ],
+      activities: [
+        {
+          type: "role-play",
+          title: "Active Listening Practice",
+          instructions: "Take turns: Partner 1 talks about their day for 2 minutes. Partner 2 listens and then summarizes what they heard.",
+        },
+        {
+          type: "write",
+          title: "I-Statements",
+          instructions: "Rewrite 3 blaming statements as 'I feel...' statements.",
+          items: ["'You never listen!' → 'I feel ignored when...'", "'Stop being mean!' → 'I feel hurt when...'"],
+        },
+      ],
     },
     {
       id: "prep3-u2-l6",
       title: "Lesson 6: Staying Close — Writing",
+      objectives: [
+        "Write an opinion paragraph with proper structure.",
+        "Use topic sentences, supporting details, and conclusions.",
+        "Apply the Third Conditional in writing.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Opinion", definition: "A personal belief or judgment about something" },
@@ -376,6 +468,18 @@ export const preparatory3Unit2: Unit = {
               "It adds depth to your opinion by showing consequences of actions.",
             ],
           },
+        },
+      ],
+      activities: [
+        {
+          type: "write",
+          title: "Opinion Paragraph",
+          instructions: "Write an opinion paragraph (100-120 words) about: 'Is technology helping or hurting family communication?' Use a topic sentence, supporting details, and a conclusion.",
+        },
+        {
+          type: "discuss",
+          title: "Peer Review",
+          instructions: "Exchange paragraphs with a partner. Give 2 positive comments and 1 suggestion for improvement.",
         },
       ],
     },

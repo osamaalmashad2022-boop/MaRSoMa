@@ -90,6 +90,11 @@ export const preparatory3Unit6: Unit = {
     {
       id: "prep3-u12-l1",
       title: "Lesson 1: Egyptian Leaders in History",
+      objectives: [
+        "Identify the key historical achievements of Queen Hatshepsut, Thutmose III, and Ramesses II.",
+        "Understand the difference between military-focused and peace-focused leadership styles.",
+        "Learn and use vocabulary related to heritage, prosperity, and immense monuments.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Heritage", definition: "The history, traditions, and culture of a country or family" },
@@ -113,10 +118,32 @@ export const preparatory3Unit6: Unit = {
           imageSrc: imgEgyptianLeaders,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Leadership Styles",
+          instructions: "Which ancient Egyptian leader's style do you admire most? Was it their focus on peace, military strength, or building monuments? Why?",
+        },
+        {
+          type: "match",
+          title: "Leader and Achievement",
+          instructions: "Match the leader to their most famous contribution based on the reading.",
+          items: [
+            "Queen Hatshepsut → Trade routes and peace",
+            "Thutmose III → Military power and wealth",
+            "Ramesses II → Abu Simbel temples",
+          ],
+        },
+      ],
     },
     {
       id: "prep3-u12-l2",
       title: "Lesson 2: Teamwork Stories",
+      objectives: [
+        "Identify the benefits of cooperation and teamwork in scientific and marketing contexts.",
+        "Master the conversion of direct commands and orders into reported speech.",
+        "Understand how dividing tasks can improve efficiency and meet tight deadlines.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Hybrid", definition: "A mix of two different things" },
@@ -159,10 +186,32 @@ export const preparatory3Unit6: Unit = {
           imageSrc: imgTeamwork,
         },
       ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Reported Commands Practice",
+          instructions: "Rewrite the direct commands as reported speech using 'told', 'asked', or 'ordered'.",
+          items: [
+            "\"Open the window,\" she said. → She asked me...",
+            "\"Don't touch the wires!\" the man said. → The man ordered us...",
+            "\"Finish your report by Friday,\" the manager said. → The manager told the team...",
+          ],
+        },
+        {
+          type: "discuss",
+          title: "My Teamwork Story",
+          instructions: "Describe a time you worked in a team. Was it successful? What specific action helped the team reach its goal?",
+        },
+      ],
     },
     {
       id: "prep3-u12-l3",
       title: "Lesson 3: Leadership Lessons",
+      objectives: [
+        "Identify and explain the core qualities of a modern, effective leader.",
+        "Understand the importance of empathy, adaptability, and vision in leadership roles.",
+        "Discuss the role of modesty and continuous learning in earning a team's respect.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Empathy", definition: "The ability to understand and share the feelings of others" },
@@ -180,10 +229,27 @@ export const preparatory3Unit6: Unit = {
           body: "Modern leadership research shows that the most effective leaders share key qualities that help them inspire teams, solve problems, and achieve goals. These qualities are about how leaders connect with and guide others.\n\nGreat leaders communicate clearly and listen carefully. They understand others' feelings and viewpoints, which builds trust and helps solve conflicts peacefully. Emotional intelligence allows them to build respectful, strong team relationships. They also stay adaptable, ready to adjust plans, welcome new ideas, and trust their teams.\n\nSuccessful leaders also have a clear vision. They set goals, break them into steps, and celebrate progress to keep teams motivated. Importantly, the best leaders never stop learning. They admit mistakes, ask for feedback, and work to improve. This modesty earns respect and encourages their teams to grow, too.\n\nLeadership isn't about having all the answers, but about guiding others with honesty, purpose, and a willingness to develop. In today's world, the most successful leaders are those who lead with both confidence and empathy, supporting their teams to achieve shared success.",
         },
       ],
+      activities: [
+        {
+          type: "write",
+          title: "The Leader in Me",
+          instructions: "Identify 3 leadership qualities mentioned in the text that you think are most important. Explain why you chose them.",
+        },
+        {
+          type: "discuss",
+          title: "Learning from Mistakes",
+          instructions: "The text says great leaders admit mistakes. Why is this important for a team's growth?",
+        },
+      ],
     },
     {
       id: "prep3-u12-l4",
       title: "Lesson 4: Story Time – Twenty Thousand Leagues (Ch. 6)",
+      objectives: [
+        "Identify the major events and the final resolution of the novel's plot in Chapter 6.",
+        "Analyze the themes of curiosity, ambition, and the consequences of isolation.",
+        "Discuss the symbolic significance of the ocean's remaining mysteries.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Exhausted", definition: "Feeling extremely tired or loss of energy" },
@@ -198,6 +264,18 @@ export const preparatory3Unit6: Unit = {
           type: "reading",
           title: "Escape to Freedom – Chapter Six",
           body: "At last, after many months, the Nautilus neared the coasts of Europe. Ned Land saw this as a chance to escape. During a strong storm, the three companions secretly lowered a small boat into the sea. They drifted away, because of the storm, yet driven by the hope of freedom.\n\nThe night was long and dangerous. Waves crashed over them, and the wind threatened to damage their weak craft. But at dawn, exhausted and half-conscious, they reached the safety of a shore. For the first time in many months, they felt solid ground under their feet.\n\nAronnax later wrote down their incredible adventures: the wonders of the sea, the dangers they had faced, and the strange brilliance of Captain Nemo. He never discovered the full truth about Nemo's past, nor what became of the Nautilus. Did it still explore the depths, hidden from mankind, or had it crashed in the storm?\n\nThe story closed not with final answers but with a lesson: Human curiosity and knowledge are powerful and can achieve wonders. Yet ambition mixed with sorrow may lead to isolation. The ocean remains vast and mysterious, holding secrets beyond our reach.",
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Escape or Adventure?",
+          instructions: "Was the characters' decision to escape during a dangerous storm a wise choice? What would you have done?",
+        },
+        {
+          type: "write",
+          title: "Aronnax's Diary",
+          instructions: "Write a diary entry for Professor Aronnax on his first day back on land, reflecting on his time with Captain Nemo.",
         },
       ],
     },

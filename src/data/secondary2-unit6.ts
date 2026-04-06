@@ -148,6 +148,11 @@ export const secondary2Unit6: Unit = {
     {
       id: "sec2-u6-l1",
       title: "Lesson 1: Racing the Clock",
+      objectives: [
+        "Differentiate between 'Clock People' and 'Event People' and their distinct perceptions of time.",
+        "Explain the 'planning fallacy' and how optimism can lead to underestimating task duration.",
+        "Discuss the social and psychological implications of punctuality versus chronic lateness.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Punctual", definition: "Arriving or happening exactly at the arranged time" },
@@ -171,10 +176,27 @@ export const secondary2Unit6: Unit = {
           imageSrc: imgTimeHabits,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Clock or Event?",
+          instructions: "Based on the reading, do you consider yourself a 'Clock Person' or an 'Event Person'? Give an example of a time your perception caused a problem or a success.",
+        },
+        {
+          type: "write",
+          title: "Respecting the Road",
+          instructions: "The text compares time to a road. Write three sentences explaining why being punctual is a way of showing respect to others on that 'road'.",
+        },
+      ],
     },
     {
       id: "sec2-u6-l2",
       title: "Lesson 2: Late Again!",
+      objectives: [
+        "Identify the workplace consequences of repeated lateness on individual and team productivity.",
+        "Evaluate the characteristics of a 'valuable teammate' in terms of consistency and reliability.",
+        "Practice professional communication for addressing delays and making future commitments.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Attendance", definition: "The act of being present at a place or event" },
@@ -203,10 +225,27 @@ export const secondary2Unit6: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "role-play",
+          title: "The Professional Promise",
+          instructions: "In pairs, role-play the conversation between Salah and Mr. Ahmed. Salah must make a specific 'Future Perfect' promise (e.g., 'By 8 AM, I will have arrived...').",
+        },
+        {
+          type: "discuss",
+          title: "Team Productivity",
+          instructions: "If one person is consistently late for a school group project, how does it affects the others? Brainstorm two specific negative impacts.",
+        },
+      ],
     },
     {
       id: "sec2-u6-l3",
       title: "Lesson 3: The Future Perfect Tense",
+      objectives: [
+        "Master the grammatical structure and sentence formation of the Future Perfect tense.",
+        "Identify and correctly apply future time markers such as 'by', 'before', and 'in ... time'.",
+        "Formulate sentences describing actions that will be completed by a specific future point in time.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Future Perfect", definition: "A tense used for actions completed before a specific future time" },
@@ -240,13 +279,35 @@ export const secondary2Unit6: Unit = {
         {
           type: "text",
           title: "Planning for the Big Day",
-          body: "Ziad and Mazen are planning a school project. By Thursday, they will have spent three full days working on it. Ziad will have completed the research by tomorrow evening. Mazen is worried about the printing shop closing early. By Friday morning, they will have submitted their project to the Principal. By the end of the project, they will have earned a sense of accomplishment and teamwork.",
+            body: "Ziad and Mazen are planning a school project. By Thursday, they will have spent three full days working on it. Ziad will have completed the research by tomorrow evening. Mazen is worried about the printing shop closing early. By Friday morning, they will have submitted their project to the Principal. By the end of the project, they will have earned a sense of accomplishment and teamwork.",
+        },
+      ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Completing Future Goals",
+          instructions: "Complete the sentences using the Future Perfect form of the verb in parentheses.",
+          items: [
+            "By the end of this year, I __________ (pass) my English exams.",
+            "In two years' time, she __________ (join) the university.",
+            "By the time you return, Ali __________ (clean) the whole house.",
+          ],
+        },
+        {
+          type: "write",
+          title: "Future Milestones",
+          instructions: "Write three personal goals using the Future Perfect tense. Begin each sentence with 'By the time I am [age]...'.",
         },
       ],
     },
     {
       id: "sec2-u6-l4",
       title: "Lesson 4: Time is Money",
+      objectives: [
+        "Analyze the metaphor 'Time is Money' to understand time as a critical, non-renewable resource.",
+        "Develop practical time management strategies to increase individual efficiency and focus.",
+        "Reflect on the long-term impact of productivity habits on academic and professional success.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Resource", definition: "Something useful that can be used to achieve a goal" },
@@ -275,6 +336,18 @@ export const secondary2Unit6: Unit = {
             "Take short, planned breaks to keep focus sharp",
             "Plan your day to reduce stress and increase productivity",
           ],
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "The Best Investment",
+          instructions: "Which of the tips (e.g., avoiding social media, taking planned breaks) do you find most difficult to follow? Why?",
+        },
+        {
+          type: "write",
+          title: "The Time Bank",
+          instructions: "If you were given 2 extra 'bonus' hours today that you couldn't waste, how would you 'spend' them to benefit your future self?",
         },
       ],
     },

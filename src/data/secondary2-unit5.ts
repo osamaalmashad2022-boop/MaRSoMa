@@ -128,6 +128,11 @@ export const secondary2Unit5: Unit = {
     {
       id: "sec2-u5-l1",
       title: "Lesson 1: Staying Healthy",
+      objectives: [
+        "Identify the essential components of a healthy daily routine for secondary students.",
+        "Understand the biological link between proper nutrition, sleep, and academic concentration.",
+        "Develop a personal plan for making small, significant lifestyle changes to improve well-being.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Nutrition", definition: "The process of providing or obtaining food necessary for health and growth" },
@@ -151,10 +156,27 @@ export const secondary2Unit5: Unit = {
           imageSrc: imgHealthyChoices,
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Simple Changes",
+          instructions: "The text suggests simple changes like 'adding fruit' or 'reducing screen time'. Which of these is easiest for you? Which is hardest? Why?",
+        },
+        {
+          type: "write",
+          title: "A Healthy Day",
+          instructions: "Write a one-day meal and exercise plan for a student. Include at least three specific healthy food choices and one type of physical activity.",
+        },
+      ],
     },
     {
       id: "sec2-u5-l2",
       title: "Lesson 2: Benefits of Drinking Water",
+      objectives: [
+        "Explain the various physiological roles water plays, such as regulating temperature and joint lubrication.",
+        "Identify the clinical symptoms and physical feelings associated with being dehydrated.",
+        "Understand how water helps vital organs like the kidneys and brain function optimally.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Dehydrated", definition: "Not having enough water in the body" },
@@ -184,10 +206,27 @@ export const secondary2Unit5: Unit = {
           ],
         },
       ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Bassem's Mistake",
+          instructions: "Bassem felt tired and sleepy because he was dehydrated. Have you ever felt this way after PE class or a football match? How much water did you drink?",
+        },
+        {
+          type: "write",
+          title: "The Body's Cooling System",
+          instructions: "Write three sentences explaining how water helps cool you down when you sweat. Use the terms 'exercise', 'sweat', and 'temperature'.",
+        },
+      ],
     },
     {
       id: "sec2-u5-l3",
       title: "Lesson 3: Past Habits (used to / would)",
+      objectives: [
+        "Master the grammatical distinction between 'used to' (habits/states) and 'would' (repeated actions).",
+        "Identify and avoid common errors when using 'would' with stative verbs or in negative forms.",
+        "Accurately describe changes in personal lifestyle habits over time using contrastive structures.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Used to", definition: "Describes past habits or states that no longer exist" },
@@ -223,13 +262,35 @@ export const secondary2Unit5: Unit = {
         {
           type: "text",
           title: "Changing Habits Over Time",
-          body: "Ahmed used to skip breakfast every morning and didn't use to drink enough water. He often got headaches. Sara used to eat too much fast food and would stay up late. When she felt stressed, she would eat unhealthy snacks. But over time, they both changed their habits. Now Ahmed eats a healthy breakfast every day, and Sara exercises regularly and eats balanced meals. Their experiences show that past habits can be changed with effort and awareness.",
+            body: "Ahmed used to skip breakfast every morning and didn't use to drink enough water. He often got headaches. Sara used to eat too much fast food and would stay up late. When she felt stressed, she would eat unhealthy snacks. But over time, they both changed their habits. Now Ahmed eats a healthy breakfast every day, and Sara exercises regularly and eats balanced meals. Their experiences show that past habits can be changed with effort and awareness.",
+        },
+      ],
+      activities: [
+        {
+          type: "fill-in-the-blank",
+          title: "Used to vs Would",
+          instructions: "Complete the sentences correctly. Note where 'would' is NOT allowed.",
+          items: [
+            "We __________ (live) in a small village. (state)",
+            "Every summer, we __________ (go) to the beach. (action)",
+            "I __________ (not like) vegetables when I was five. (negative state)",
+          ],
+        },
+        {
+          type: "write",
+          title: "Personal Transition",
+          instructions: "Write two sentences about yourself. One about something you 'used to' do, and one about what you 'would' do repeatedly in the past.",
         },
       ],
     },
     {
       id: "sec2-u5-l4",
       title: "Lesson 4: The Power of Positive Thinking",
+      objectives: [
+        "Understand the scientific connection between mental attitude and physical health markers like immune strength.",
+        "Identify the practical differences and health outcomes between optimistic and pessimistic mindsets.",
+        "Apply mindfulness and gratitude techniques to develop a resilient and positive mental attitude.",
+      ],
       vocabulary: {
         flashcards: [
           { term: "Mental attitude", definition: "A way of thinking and feeling connected with the mind" },
@@ -257,6 +318,18 @@ export const secondary2Unit5: Unit = {
             "Focus on solutions, not problems",
             "Be your own best friend and cheer yourself on",
           ],
+        },
+      ],
+      activities: [
+        {
+          type: "discuss",
+          title: "Positive Self-Talk",
+          instructions: "With a partner, take three 'I can't' statements about school (e.g., 'I can't do math') and turn them into 'I can try' statements.",
+        },
+        {
+          type: "write",
+          title: "Three Good Things",
+          instructions: "Practice gratitude right now. Write down three good things that happened during your day, no matter how small they seem.",
         },
       ],
     },
