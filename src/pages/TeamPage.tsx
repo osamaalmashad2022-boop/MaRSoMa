@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import AnimatedSection from "@/components/AnimatedSection";
 import CosmicBackground from "@/components/CosmicBackground";
-import CosmicAvatar from "@/components/CosmicAvatar";
+
 
 const supervisors = [
   { name: "أ. د/ محمد شمة", role: "إشراف أكاديمي" },
@@ -12,9 +12,9 @@ const supervisors = [
 ];
 
 const teamMembers = [
-  { name: "رحمه جمال عيسى", role: "عضو فريق التطوير", seed: 0, icon: Brain },
-  { name: "سما محمد غنام", role: "عضو فريق التطوير", seed: 1, icon: Layers },
-  { name: "منه الله وليد الكناني", role: "عضو فريق التطوير", seed: 2, icon: Target },
+  { name: "رحمه جمال عيسى", role: "مبرمجة المنصة", image: "/rahma.jpeg", icon: Brain },
+  { name: "سما محمد غنام", role: "مصممة الواجهات", image: "/sama.jpeg", icon: Layers },
+  { name: "منه الله وليد الكناني", role: "إدارة المحتوى", image: "/minna.jpeg", icon: Target },
 ];
 
 const TeamPage = () => {
@@ -80,9 +80,11 @@ const TeamPage = () => {
             {teamMembers.map((m, i) => (
               <AnimatedSection key={m.name} animation="zoom" delay={i * 150}>
                 <div className="group text-center cosmic-glass rounded-3xl p-8 neon-border-purple hover-lift transition-all duration-500 space-y-4">
-                  {/* Cosmic generative avatar */}
+                  {/* Team member avatar */}
                   <div className="relative mx-auto w-max group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                    <CosmicAvatar seed={m.seed} size={84} />
+                    <div className="h-[84px] w-[84px] rounded-full overflow-hidden border-2 border-primary/20 shadow-glow-purple bg-muted">
+                      <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+                    </div>
                     {/* Floating role icon */}
                     <div className="absolute -bottom-2 -right-2 h-8 w-8 rounded-lg gradient-cosmic text-white flex items-center justify-center shadow-sm border-2 border-background">
                       <m.icon className="h-4 w-4" />

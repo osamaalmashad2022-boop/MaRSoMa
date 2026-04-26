@@ -8,7 +8,7 @@ import { GraduationCap, ArrowLeft, Lock, Star, BookOpen, Sparkles, Heart, Trendi
 import AnimatedSection from "@/components/AnimatedSection";
 import Sidebar from "@/components/Sidebar";
 import CosmicBackground from "@/components/CosmicBackground";
-import CosmicAvatar from "@/components/CosmicAvatar";
+
 
 const supervisors = [
   { name: "أ. د/ محمد شمة" },
@@ -156,9 +156,9 @@ const Index = () => {
             {/* Team Members — Cosmic Avatars */}
             <div className="grid gap-5 sm:grid-cols-3 max-w-3xl mx-auto">
               {[
-                { name: "رحمه جمال عيسى", seed: 0, role: "فريق التطوير", icon: Brain },
-                { name: "سما محمد غنام", seed: 1, role: "فريق التطوير", icon: Layers },
-                { name: "منه الله وليد الكناني", seed: 2, role: "فريق التطوير", icon: Target },
+                { name: "رحمه جمال عيسى", image: "/rahma.jpeg", role: "مبرمجة المنصة", icon: Brain },
+                { name: "سما محمد غنام", image: "/sama.jpeg", role: "مصممة الواجهات", icon: Layers },
+                { name: "منه الله وليد الكناني", image: "/minna.jpeg", role: "إدارة المحتوى", icon: Target },
               ].map((m, i) => (
                 <AnimatedSection
                   key={m.name}
@@ -166,9 +166,11 @@ const Index = () => {
                   delay={i * 150}
                   className="group flex flex-col items-center gap-4 cosmic-glass rounded-3xl p-7 hover-lift transition-all duration-500 neon-border-purple"
                 >
-                  {/* Cosmic generative avatar */}
+                  {/* Team member avatar */}
                   <div className="relative group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                    <CosmicAvatar seed={m.seed} size={72} />
+                    <div className="h-[72px] w-[72px] rounded-full overflow-hidden border-2 border-primary/20 shadow-glow-purple bg-muted">
+                      <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+                    </div>
                     {/* Floating role icon */}
                     <div className="absolute -bottom-1 -right-1 h-7 w-7 rounded-lg gradient-cosmic text-white flex items-center justify-center shadow-sm">
                       <m.icon className="h-3.5 w-3.5" />
