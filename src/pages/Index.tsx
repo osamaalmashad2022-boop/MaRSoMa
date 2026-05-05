@@ -204,32 +204,34 @@ const Index = () => {
             {/* Team Members — Cosmic Avatars */}
             <div className="grid gap-5 sm:grid-cols-3 max-w-3xl mx-auto">
               {teamMembersData.map((m, i) => (
-                <Dialog key={m.name}>
-                  <DialogTrigger asChild>
-                    <AnimatedSection
-                      animation="zoom"
-                      delay={i * 150}
-                      className="group flex flex-col items-center gap-4 cosmic-glass rounded-3xl p-7 hover-lift transition-all duration-500 neon-border-purple cursor-pointer relative overflow-hidden"
-                    >
-                      <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500" />
-                      {/* Team member avatar */}
-                      <div className="relative group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 z-10">
-                        <div className="h-[72px] w-[72px] rounded-full overflow-hidden border-2 border-primary/20 shadow-glow-purple bg-muted">
-                          <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+                <AnimatedSection
+                  key={m.name}
+                  animation="zoom"
+                  delay={i * 150}
+                  className="group"
+                >
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="flex flex-col items-center gap-4 cosmic-glass rounded-3xl p-7 hover-lift transition-all duration-500 neon-border-purple cursor-pointer relative overflow-hidden">
+                        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500" />
+                        {/* Team member avatar */}
+                        <div className="relative group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 z-10">
+                          <div className="h-[72px] w-[72px] rounded-full overflow-hidden border-2 border-primary/20 shadow-glow-purple bg-muted">
+                            <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+                          </div>
+                          {/* Floating role icon */}
+                          <div className="absolute -bottom-1 -right-1 h-7 w-7 rounded-lg gradient-cosmic text-white flex items-center justify-center shadow-sm">
+                            <m.icon className="h-3.5 w-3.5" />
+                          </div>
                         </div>
-                        {/* Floating role icon */}
-                        <div className="absolute -bottom-1 -right-1 h-7 w-7 rounded-lg gradient-cosmic text-white flex items-center justify-center shadow-sm">
-                          <m.icon className="h-3.5 w-3.5" />
+                        <div className="text-center space-y-1.5 z-10">
+                          <p className="font-extrabold text-sm">{m.name}</p>
+                          <Badge className="gradient-cosmic text-white border-0 text-[10px] font-bold shadow-sm px-3">
+                            {m.role}
+                          </Badge>
                         </div>
                       </div>
-                      <div className="text-center space-y-1.5 z-10">
-                        <p className="font-extrabold text-sm">{m.name}</p>
-                        <Badge className="gradient-cosmic text-white border-0 text-[10px] font-bold shadow-sm px-3">
-                          {m.role}
-                        </Badge>
-                      </div>
-                    </AnimatedSection>
-                  </DialogTrigger>
+                    </DialogTrigger>
                   
                   <DialogContent className="sm:max-w-[400px] rounded-[32px] p-0 border-0 overflow-hidden bg-white/95 backdrop-blur-xl gap-0">
                     <DialogTitle className="sr-only">دور {m.name}</DialogTitle>
@@ -282,6 +284,7 @@ const Index = () => {
                     </div>
                   </DialogContent>
                 </Dialog>
+                </AnimatedSection>
               ))}
             </div>
 
