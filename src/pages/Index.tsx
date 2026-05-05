@@ -4,11 +4,59 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { stagesMeta, allStages } from "@/data/stages";
-import { GraduationCap, ArrowLeft, Lock, Star, BookOpen, Sparkles, Heart, TrendingUp, Brain, Layers, Trophy, Target, Lightbulb } from "lucide-react";
+import { GraduationCap, ArrowLeft, Lock, Star, BookOpen, Sparkles, Heart, TrendingUp, Brain, Layers, Trophy, Target, Lightbulb, Calendar, ClipboardList } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import Sidebar from "@/components/Sidebar";
 import CosmicBackground from "@/components/CosmicBackground";
+import ProjectTimeline from "@/components/ProjectTimeline";
+import { Dialog, DialogContent, DialogTrigger, DialogClose, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
+
+
+const teamMembersData = [
+  { 
+    name: "رحمه جمال عيسى", 
+    image: "/rahma.jpeg", 
+    role: "مبرمجة المنصة", 
+    icon: Brain,
+    detailsHeader: "مسؤولة عن برمجة وتطوير المنصة:",
+    detailsSub: "المرحلة التنفيذية من حيث:",
+    tasks: [
+      "وضع وتصميم أولي لصفحات المشروع",
+      "برمجة وإدخال الأنشطة داخل الصفحات",
+      "التعديل النهائي وإصلاح الأخطاء",
+      "المراجعة الشاملة لاختبار المشروع"
+    ]
+  },
+  { 
+    name: "سما محمد غنام", 
+    image: "/sama.jpeg", 
+    role: "مصممة الواجهات", 
+    icon: Layers,
+    detailsHeader: "مسؤولة عن تصميم واجهات المشروع:",
+    detailsSub: "المرحلة التحضيرية والتنفيذية من حيث:",
+    tasks: [
+      "بناء صفحات HTML الأساسية",
+      "تصميم الصور والأيقونات التفاعلية",
+      "تحسين وتنسيق الواجهة النهائية",
+      "المراجعة النهائية للتقييم"
+    ]
+  },
+  { 
+    name: "منه الله وليد الكناني", 
+    image: "/minna.jpeg", 
+    role: "إدارة المحتوى", 
+    icon: Target,
+    detailsHeader: "مسؤولة عن المحتوى وإضافة التفاعل:",
+    detailsSub: "المرحلة التحضيرية والنهائية من حيث:",
+    tasks: [
+      "جمع النصوص العلمية للمقررات",
+      "ربط الملفات وإضافة الروابط",
+      "تصميم تفاعلي وإضافة تأثيرات حركية",
+      "مراجعة الواجهة وتحسين الألوان"
+    ]
+  },
+];
 
 const supervisors = [
   { name: "أ. د/ محمد شمة" },
@@ -155,34 +203,85 @@ const Index = () => {
 
             {/* Team Members — Cosmic Avatars */}
             <div className="grid gap-5 sm:grid-cols-3 max-w-3xl mx-auto">
-              {[
-                { name: "رحمه جمال عيسى", image: "/rahma.jpeg", role: "مبرمجة المنصة", icon: Brain },
-                { name: "سما محمد غنام", image: "/sama.jpeg", role: "مصممة الواجهات", icon: Layers },
-                { name: "منه الله وليد الكناني", image: "/minna.jpeg", role: "إدارة المحتوى", icon: Target },
-              ].map((m, i) => (
-                <AnimatedSection
-                  key={m.name}
-                  animation="zoom"
-                  delay={i * 150}
-                  className="group flex flex-col items-center gap-4 cosmic-glass rounded-3xl p-7 hover-lift transition-all duration-500 neon-border-purple"
-                >
-                  {/* Team member avatar */}
-                  <div className="relative group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                    <div className="h-[72px] w-[72px] rounded-full overflow-hidden border-2 border-primary/20 shadow-glow-purple bg-muted">
-                      <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+              {teamMembersData.map((m, i) => (
+                <Dialog key={m.name}>
+                  <DialogTrigger asChild>
+                    <AnimatedSection
+                      animation="zoom"
+                      delay={i * 150}
+                      className="group flex flex-col items-center gap-4 cosmic-glass rounded-3xl p-7 hover-lift transition-all duration-500 neon-border-purple cursor-pointer relative overflow-hidden"
+                    >
+                      <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500" />
+                      {/* Team member avatar */}
+                      <div className="relative group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 z-10">
+                        <div className="h-[72px] w-[72px] rounded-full overflow-hidden border-2 border-primary/20 shadow-glow-purple bg-muted">
+                          <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+                        </div>
+                        {/* Floating role icon */}
+                        <div className="absolute -bottom-1 -right-1 h-7 w-7 rounded-lg gradient-cosmic text-white flex items-center justify-center shadow-sm">
+                          <m.icon className="h-3.5 w-3.5" />
+                        </div>
+                      </div>
+                      <div className="text-center space-y-1.5 z-10">
+                        <p className="font-extrabold text-sm">{m.name}</p>
+                        <Badge className="gradient-cosmic text-white border-0 text-[10px] font-bold shadow-sm px-3">
+                          {m.role}
+                        </Badge>
+                      </div>
+                    </AnimatedSection>
+                  </DialogTrigger>
+                  
+                  <DialogContent className="sm:max-w-[400px] rounded-[32px] p-0 border-0 overflow-hidden bg-white/95 backdrop-blur-xl gap-0">
+                    <DialogTitle className="sr-only">دور {m.name}</DialogTitle>
+                    <DialogDescription className="sr-only">تفاصيل مسؤوليات {m.name} في المشروع</DialogDescription>
+                    
+                    {/* Top Accent Curve like the image */}
+                    <div className="absolute top-0 inset-x-0 h-3 bg-[#eab308]" />
+                    
+                    <div className="p-8 pt-12 flex flex-col items-center">
+                      {/* Avatar */}
+                      <div className="h-24 w-24 rounded-full p-1 bg-gradient-to-tr from-blue-100 to-blue-50 border border-blue-100 shadow-sm mb-4">
+                        <img src={m.image} alt={m.name} className="h-full w-full rounded-full object-cover" />
+                      </div>
+                      
+                      {/* Name & Role */}
+                      <h3 className="text-2xl font-extrabold text-[#1e3a8a] mb-1">{m.name}</h3>
+                      <p className="text-[#d97706] font-bold text-sm mb-6">{m.role}</p>
+                      
+                      {/* Info Box */}
+                      <div className="w-full bg-[#f8fafc] rounded-2xl p-5 border border-slate-100 shadow-sm space-y-4">
+                        <div className="flex items-center gap-2 text-[#1e3a8a] font-bold">
+                          <ClipboardList className="h-5 w-5 text-[#8b5cf6]" />
+                          <span>{m.detailsHeader}</span>
+                        </div>
+                        
+                        <div className="h-px w-full bg-slate-200" />
+                        
+                        <div className="text-sm font-semibold text-slate-700">
+                          {m.detailsSub}
+                        </div>
+                        
+                        <div className="h-px w-full bg-slate-200" />
+                        
+                        <ul className="space-y-3">
+                          {m.tasks.map((task, idx) => (
+                            <li key={idx} className="flex items-start gap-3">
+                              <Sparkles className="h-4 w-4 text-[#eab308] shrink-0 mt-0.5" />
+                              <span className="text-sm font-medium text-slate-600 pt-0.5 leading-snug">{task}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      {/* Close Button */}
+                      <DialogClose asChild>
+                        <Button className="mt-8 w-48 rounded-full bg-[#1e3a8a] hover:bg-[#1e3a8a]/90 text-white font-bold h-12 shadow-lg shadow-[#1e3a8a]/20">
+                          فهمت ذلك
+                        </Button>
+                      </DialogClose>
                     </div>
-                    {/* Floating role icon */}
-                    <div className="absolute -bottom-1 -right-1 h-7 w-7 rounded-lg gradient-cosmic text-white flex items-center justify-center shadow-sm">
-                      <m.icon className="h-3.5 w-3.5" />
-                    </div>
-                  </div>
-                  <div className="text-center space-y-1.5">
-                    <p className="font-extrabold text-sm">{m.name}</p>
-                    <Badge className="gradient-cosmic text-white border-0 text-[10px] font-bold shadow-sm px-3">
-                      {m.role}
-                    </Badge>
-                  </div>
-                </AnimatedSection>
+                  </DialogContent>
+                </Dialog>
               ))}
             </div>
 
@@ -283,6 +382,20 @@ const Index = () => {
                 );
               })}
             </div>
+          </div>
+        </section>
+
+        {/* ===== TIMELINE SECTION ===== */}
+        <section id="timeline" className="relative px-6 pb-16 scroll-mt-8">
+          <div className="max-w-5xl mx-auto space-y-8">
+            <AnimatedSection animation="fade-up" className="text-center space-y-3">
+              <div className="inline-flex items-center gap-2 bg-info/10 text-info px-5 py-2 rounded-full text-sm font-bold">
+                <Calendar className="h-3.5 w-3.5" /> الخطة الزمنية
+              </div>
+              <h2 className="text-3xl font-extrabold">مراحل تطوير المشروع</h2>
+            </AnimatedSection>
+            
+            <ProjectTimeline />
           </div>
         </section>
 
