@@ -32,7 +32,7 @@ const TeamPage = () => {
           </Button>
           <div className="h-9 w-9 rounded-lg gradient-cosmic p-0.5 shrink-0">
             <div className="h-full w-full rounded-[6px] bg-white flex items-center justify-center">
-              <img src="/marsoma-logo.png" alt="MaRSoMa" className="h-6 w-auto" />
+              <img src="/marsoma-logo.png" alt="منصة اللغة الإنجليزية" className="h-6 w-auto" />
             </div>
           </div>
           <div>

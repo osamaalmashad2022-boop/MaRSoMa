@@ -57,13 +57,13 @@ const Sidebar = () => {
           <div className="relative">
             <div className="h-12 w-12 rounded-2xl gradient-cosmic p-0.5 shadow-glow-purple animate-neon-pulse">
               <div className="h-full w-full rounded-[14px] bg-white flex items-center justify-center overflow-hidden">
-                <img src="/marsoma-logo.png" alt="MaRSoMa" className="h-9 w-9 object-contain" />
+                <img src="/marsoma-logo.png" alt="منصة اللغة الإنجليزية" className="h-9 w-9 object-contain" />
               </div>
             </div>
           </div>
           <div>
-            <h1 className="text-base font-extrabold gradient-text">MaRSoMa</h1>
-            <p className="text-[10px] text-muted-foreground font-medium">منصة تعلم الإنجليزية</p>
+            <h1 className="text-base font-extrabold gradient-text">منصة اللغة الإنجليزية</h1>
+            <p className="text-[10px] text-muted-foreground font-medium">تعلّم بذكاء وإبداع</p>
           </div>
         </div>
       </div>

@@ -118,7 +118,7 @@ const Index = () => {
                       className="inline-flex items-center gap-2 gradient-cosmic text-white px-5 py-2 rounded-full text-xs font-bold shadow-glow-purple"
                       style={{ backgroundSize: "200% 200%", animation: "gradient-flow 4s ease infinite" }}
                     >
-                      <Lightbulb className="h-3.5 w-3.5" /> منصة MaRSoMa التعليمية
+                      <Lightbulb className="h-3.5 w-3.5" /> منصة اللغة الإنجليزية التعليمية
                     </div>
                     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-[1.25]">
                       أتقن الإنجليزية
@@ -157,7 +157,7 @@ const Index = () => {
                     <div className="absolute inset-0 rounded-3xl gradient-cosmic opacity-15 blur-2xl scale-150" />
                     <div className="relative h-28 w-28 rounded-3xl gradient-cosmic p-1 shadow-glow-purple animate-neon-pulse">
                       <div className="h-full w-full rounded-[20px] bg-white flex items-center justify-center">
-                        <img src="/marsoma-logo.png" alt="MaRSoMa Logo" className="h-20 w-auto drop-shadow-md" />
+                        <img src="/marsoma-logo.png" alt="منصة اللغة الإنجليزية Logo" className="h-20 w-auto drop-shadow-md" />
                       </div>
                     </div>
                   </div>
@@ -406,9 +406,9 @@ const Index = () => {
         <AnimatedSection as="section" animation="fade-up">
           <footer className="border-t bg-white/50 py-10">
             <div className="max-w-5xl mx-auto px-6 text-center space-y-3">
-              <img src="/marsoma-logo.png" alt="MaRSoMa" width={80} height={80} loading="lazy" className="mx-auto h-10 w-auto opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-500" />
+              <img src="/marsoma-logo.png" alt="منصة اللغة الإنجليزية" width={80} height={80} loading="lazy" className="mx-auto h-10 w-auto opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-500" />
               <p className="text-sm text-muted-foreground font-medium">
-                MaRSoMa — منصة تعلم الإنجليزية
+                منصة اللغة الإنجليزية
               </p>
               <p className="text-xs text-muted-foreground/60">
                 © {new Date().getFullYear()} جميع الحقوق محفوظة

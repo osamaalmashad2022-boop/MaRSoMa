@@ -54,7 +54,7 @@ const LoginPage = () => {
             <div className="absolute inset-0 rounded-3xl gradient-cosmic opacity-20 blur-xl scale-125 animate-pulse-glow" />
             <div className="relative h-20 w-20 mx-auto rounded-3xl gradient-cosmic p-0.5 shadow-glow-purple">
               <div className="h-full w-full rounded-[22px] bg-white flex items-center justify-center">
-                <img src="/marsoma-logo.png" alt="MaRSoMa Logo" className="h-14 w-auto" />
+                <img src="/marsoma-logo.png" alt="منصة اللغة الإنجليزية Logo" className="h-14 w-auto" />
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const LoginPage = () => {
             <h1 className="text-2xl font-extrabold">
               مرحباً بك في{" "}
               <span className="gradient-text" style={{ backgroundSize: "200% 200%", animation: "gradient-flow 4s ease infinite" }}>
-                MaRSoMa
+                منصة اللغة الإنجليزية
               </span>
             </h1>
             <p className="text-sm text-muted-foreground font-medium">
